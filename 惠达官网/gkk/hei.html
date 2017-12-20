@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公开课</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<script src="js/jQuery-1.8.3.min.js"></script>
+	 <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+	<!-- iframe引入导航 -->
+	<!-- <iframe src="html/nav.html" frameborder="0" width=100% height="90" scrolling="no"></iframe> -->
+
+	<!-- 导航 -->
+	<div class="head-wrap">
+		<div class="head">
+			<a href="../" class="logo"">
+				<img src="images/huida-ico.png" alt="">
+			</a>
+			<div class="nav">
+				<a href="../" class="page1">首页</a>
+				<a href="../spxz/" class="page3">视频下载</a>
+				<a href="../gkk/" class="page2">公开课</a><a href="../xxlxt/" class="page4">学习线路图</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="img-bj">
+		<div class="img"></div>
+	</div>
+	<div class="news-wrap">
+		<div class="news">
+			<div class="l-nav-wrap animated bounceInLeft">
+				<div class="l-nav">
+					<p class="nav1 all">全部</p>
+					<p class="nav1 java">JavaEE</p>
+					<p class="nav1 andr">Android</p>
+					<p class="nav1 kh5">H5</p>
+				</div>
+			</div>
+			<!-- 全部 -->
+			<div class="navnews">
+				<div class="news-text wow rollIn">
+					<div class="news-img">
+						<img src="images/img1.png">
+						<p class="news-p">做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow bounceInDown ">
+					<div class="news-img">
+						<img src="images/img2.png">
+						<p class="news-p">带你打开世界第一编程语言大门</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow bounceInDown ">
+					<div class="news-img">
+						<img src="images/img3.png">
+						<p class="news-p">软件测试师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right wow lightSpeedIn">
+					<div class="news-img">
+						<img src="images/img4.png">
+						<p class="news-p">全能工程师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text wow bounceInLeft">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow bounceInLeft">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow bounceInRight">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right wow bounceInRight">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+
+				<div class="news-text wow flipInX">
+					<div class="news-img">
+						<img src="images/img9.png">
+						<p class="news-p">互联网+时代职业发展与就业指南</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow flipInX">
+					<div class="news-img">
+						<img src="images/img10.png">
+						<p class="news-p">Java开发就业促进计划</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow flipInX">
+					<div class="news-img">
+						<img src="images/img11.png">
+						<p class="news-p">IT就业分析报告</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right wow flipInX">
+					<div class="news-img">
+						<img src="images/img12.png">
+						<p class="news-p">Java语言实现小型计算器</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text wow bounceInDown">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow bounceInDown">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text wow bounceInDown">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right wow bounceInDown">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- JavaEE -->
+			<div class="navnews none">
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img1.png">
+						<p class="news-p">高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img2.png">
+						<p class="news-p">带你打开世界第一编程语言大门</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img3.png">
+						<p class="news-p">软件测试师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img4.png">
+						<p class="news-p">全能工程师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img9.png">
+						<p class="news-p">互联网+时代职业发展与就业指南</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img10.png">
+						<p class="news-p">Java开发就业促进计划</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img11.png">
+						<p class="news-p">IT就业分析报告</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img12.png">
+						<p class="news-p">Java语言实现小型计算器</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Android   -->
+			<div class="navnews none">
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img1.png">
+						<p class="news-p">领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img2.png">
+						<p class="news-p">带你打开世界第一编程语言大门</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img3.png">
+						<p class="news-p">软件测试师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img4.png">
+						<p class="news-p">全能工程师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img9.png">
+						<p class="news-p">互联网+时代职业发展与就业指南</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img10.png">
+						<p class="news-p">Java开发就业促进计划</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img11.png">
+						<p class="news-p">IT就业分析报告</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img12.png">
+						<p class="news-p">Java语言实现小型计算器</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- H5 -->
+			<div class="navnews none">
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img1.png">
+						<p class="news-p">做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img2.png">
+						<p class="news-p">带你打开世界第一编程语言大门</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img3.png">
+						<p class="news-p">软件测试师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img4.png">
+						<p class="news-p">全能工程师，做高薪的领跑者</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img9.png">
+						<p class="news-p">互联网+时代职业发展与就业指南</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img10.png">
+						<p class="news-p">Java开发就业促进计划</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img11.png">
+						<p class="news-p">IT就业分析报告</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img12.png">
+						<p class="news-p">Java语言实现小型计算器</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img5.png">
+						<p class="news-p">什么样的人适合学IT?</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img6.png">
+						<p class="news-p">年薪20W，工作经验分享</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text">
+					<div class="news-img">
+						<img src="images/img7.png">
+						<p class="news-p">Web前段工程师，成为亿万富翁的人</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="news-text right">
+					<div class="news-img">
+						<img src="images/img8.png">
+						<p class="news-p">帮你搞定面试官</p>
+					</div>
+					<!-- 遮罩层 --> 
+					<div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 页码 -->
+	<div class="pagebox">
+		<div id="demo7"></div>
+	</div>
+	<iframe class="new-footer" src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no">
+</iframe>
+
+	<script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+
+
+</body>
+</html>

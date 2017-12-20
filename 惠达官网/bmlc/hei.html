@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报名流程</title>
+	<script type="text/javascript" src='../public/api.js'></script>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> -->
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/index.js"></script>
+	<style type="text/css">
+		.Vbtn-3 {
+		    background: rgba(0, 0, 0, 0.3) !important;
+		    text-align: center;
+		    float: left;
+		    border-radius: 5px;
+		}
+	</style>
+	 <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+
+</head>
+<link rel="stylesheet" href="css/sign.css">
+<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+<link rel="stylesheet" href="css/set_1.css">
+<!-- <link rel="icon" href="favicon.gif" type="image/gif" /> -->
+<body>
+	<iframe src="./html/nav.html" frameborder="0" width=100% height="90" scrolling="no"></iframe>
+	<!-- <iframe class="lb" src="html/lb.html" frameborder="0" width=100% height="600" scrolling="no"></iframe> -->
+		<img src="images/bj3.jpg" alt="" class="bj-img">
+		<!-- 开班查询 -->
+	<div class="select-box">
+		<img src="images/img1.png" alt="">
+		<span class="sele">开班查询</span>
+		<input class="hot" type="text" placeholder="快速搜索热门课程" id="msg">
+		<a href="#" id="sou"><img class="search" src="images/img1.png" alt=""></a>
+	</div>
+
+
+	<div class="banji-box">
+		<ul class="list">
+			<li id="li1">
+				<a href="#bm" class="andr">
+					Android+物联网 基础班 2017-09-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+
+			<li>
+				<a href="#bm" class="andr">
+					JavaEE 基础班 2017-09-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+
+			<li>
+				<a href="#bm" class="andr">
+					H5+全栈工程师 基础班 2017-09-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+
+			<li>
+				<a href="#bm" class="andr">
+					Android+物联网 基础班 2017-09-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+		</ul>
+
+		<ul class="list border">
+			<li>
+				<a href="#bm" class="andr">
+					Android+物联网 基础班 2017-10-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+
+			<li>
+				<a href="#bm" class="andr">
+					JavaEE 基础班 2017-10-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+
+			<li>
+				<a href="#bm" class="andr">
+					H5+全栈工程师 基础班 2017-10-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+
+			<li>
+				<a href="#bm" class="andr">
+					Android+物联网 基础班 2017-10-17
+				</a>
+				<a href="#bm" class="online">在线报名</a>
+			</li>
+
+		</ul>
+  </div>
+
+	<!-- 填写预报名 -->
+	<div class="select-box" id="bm">
+		<img src="images/img2.png" alt="">
+		<span class="sele">填写预报名</span>
+	</div>
+	<p class="join">您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！</p>
+	<div class="message">
+		<!-- <p class="join">您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！</p> -->
+
+		<form class="msgbox">
+			<div class="person">
+				<i class="iconfont icon-yonghu"></i>
+				<input id="name" type="text">
+				<label>
+					<span class="star">*</span>
+					<span class="name">真实姓名</span>
+				</label>
+			</div>
+
+			<div class="person">
+				<i class="iconfont icon-shouji"></i>
+				<input id="phone" type="text" id='phone' >
+				<label>
+					<span class="star">*</span>
+					<span class="name">联系手机</span>
+				</label>
+			</div>
+
+			<div class="person">
+				<i class="iconfont icon-qq"></i>
+				<input id="qq" type="text">
+				<label>
+					<span class="star">*</span>
+					<span class="name">QQ号码</span>
+				</label>
+			</div>
+
+			<div class="person">
+				<i class="iconfont icon-huodongbaomingjilu"></i>
+				<input id='cla' type="text">
+				<label>
+					<span class="star">*</span>
+					<span class="name">学科报名</span>
+				</label>
+			</div>
+		</form>
+
+<!-- 提交按钮		 -->
+<div class="box-4">
+	<div class="set_container">
+		<a id="tj" href="javascript:;" class="set_1_btn Vbtn-3">提交 </a>
+	</div>
+</div>
+<!--  -->
+		<!-- <div class="box-btn">
+			<input type="button" value="提交" class="tj-btn">
+		</div> -->
+<!--  -->
+	<div class="box">
+	   <div class="main-cen">
+	      <div class="title">
+	        <img src="images/img3.png" alt="">
+	        <span>缴纳定金</span>
+	      </div>
+	      	<div class="content-jn">
+		        <p>和咨询老师确认预报名信息后，请向咨询老师缴纳学费300元，作为座位预订金，该座位预订金将从您的总学费中扣除。</p>
+	    	</div>
+
+	      <div class="title">
+	        <img src="images/img4.png" alt="">
+	        <span>确认汇款</span>
+	      </div>
+	      <div class="content-hk">
+	        <p>请将您的汇款情况告知咨询老师（主要包括汇款人姓名、所报班级、汇款时间等），
+	           咨询老师在确认收到汇款后会及时跟您确认座位预订成功。</p>
+	      </div>
+
+	      <div class="title">
+	        <img src="images/img5.png" alt="">
+	        <span>来校报道</span>
+	      </div>
+	      <div class="content">
+	        <p>所有学员须在开课前1天之前来公司报到，报到时须携带身份证原件，填写学籍卡，签订学员守则。</p>
+	      </div>
+
+	      <div class="title">
+	        <img src="images/img6.png" alt="">
+	        <span>补齐学费</span>
+	      </div>
+	      <div class="content">
+	        <p>为了不影响您的正常上课，所有学员须在开课前一周，从以下两种缴费方式中任选一种，补齐所有学费。<br/>
+	           1、现金缴纳：您可以到我们的培训中心所在地亲自缴纳。<br/>
+						 2、银行汇款：您可以通过银行汇款或者网银转账的方式补齐学费。</p>
+	      </div>
+	      <p class="lc-p">以上为报名流程，如有疑问，欢迎咨询</p>
+	      <a href="javascript:;" id="zx" class="zx-btn">欢迎咨询</a>
+	  </div>
+	</div>
+</div>
+
+  <div id="zz">
+    <div id="xx">
+      <p id="off">
+      	<img src="images/success.png" alt="">
+      </p>
+    </div>
+  </div>
+</body>
+
+
+</html>
+<iframe class="new-footer" src="../public/new-footer.html" frameborder="0" width='100%' height="352" scrolling="no"></iframe>

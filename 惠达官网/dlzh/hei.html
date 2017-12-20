@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>登录账号</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<!-- <link rel="stylesheet" type="text/css" href="icon/iconfont.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src='js/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='../public/api.js'></script>
+    <script src="js/login.js"></script>
+    <style type="text/css">
+        .regi{display:none;}
+    </style>
+     <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+</head>
+<body>
+    <div id="container">
+        <video id="background_video" loop muted></video>
+        <div id="video_cover"></div>
+        <div id="overlay"></div>
+    </div>
+
+    <!-- 登录页面 -->
+	<div class="login-box" id="login-box">
+		<div class="left">
+			<form action="http://www.hao123.com" class="login" id="login" method="post">
+    	        <!-- <div class="dl-box" id="dl-box1"> -->
+    	            <p class="dl">登录账号</p>
+                    <img src="img/me.png" alt="" class="me">
+                    <span class="star">*</span><input type="text" placeholder="请输入用户名" class="sjnum" id="phonenum">
+                    <!-- 验证码 -->
+                    <!-- <div class='yzbox'>
+                        <input class="yzi" maxlength="6" type="text" id="pwd-sh" placeholder="请输入验证码" />
+                        <input type="button" id="yz" class="fs" value="获取验证码">
+                    </div> -->
+                    <span class="star star1">*</span><input type="password" placeholder="请输入密码" id="pwd" class="sjnum">
+                    <p class="use">使用以下账号直接登录</p>
+                    <a href="#" class="qqdl">
+                        <img src="img/qq.png" alt="" class="qq">
+                    </a>
+
+                    <a href="#" class="wxdl">
+                        <img src="img/weixin.png" alt="">
+                    </a>
+                    <a style="display: block;color: #f4800e;" href="../zcxx/">没有账号?立即注册</a>
+                    <!-- <input type="text" value="登 录" class="login-btn"> -->
+                    <span id="dl" class="login-btn">登 录</span>
+    	        <!-- </div> --> 
+            </form>    
+        </div>    
+	</div>
+   
+</body>
+
+
+<script src="js/bideo.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</html>

@@ -1,0 +1,106 @@
+*{margin:0;padding:0;font-family: '微软雅黑';}
+.news-wrap{
+	width: 100%;
+	height: 1005px;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+}
+.news-nav{
+	width: 1210px;
+	height: 1170px;
+	margin:34px auto;
+}
+li{list-style: none;}
+.news-top{
+	padding-top: 40px;
+	width: 1210px;
+	height: 40px;
+	border-bottom:1px solid #939393;
+	position: relative;
+}
+.ul-top li{
+	float: left;
+	list-style: none;
+	line-height: 38px;
+	font-size: 18px;
+	position: absolute;
+	left:44px;
+}
+.bord{	border-bottom: 3px solid green;}
+
+.ul-top li:nth-child(2){left: 170px;}
+.ul-top li:nth-child(3){left: 322px;}
+.ul-top{float: left;width: 605px;}
+.news-right{
+	width:300px;
+	position: absolute;
+	top: 16px;
+	right: 0;
+}
+.none{display: none}
+.block{display: block;}
+.news-right i{
+	font-size: 40px;
+	color: #939393;
+	padding-left: 44px;
+	padding-bottom: 40px;
+	line-height: 40px;
+}
+.news-right .icon-weixin{
+	position: absolute;
+	top: 4px;
+}
+.fenxiang{
+	position: relative;
+}
+.fenxiang span{
+	position: absolute;
+	width: 92px;
+	height: 20px;
+	border:1px solid #939393;
+	color: #939393;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	top: -26px;
+	border-radius: 6px;
+	background-color:#fff;
+	float: left;
+	display: none;
+}
+.fenxiang .kongjian{
+	left: 0;
+}
+
+.fenxiang .weibo{
+	left: 100px;
+}
+.fenxiang .weixin{
+	right: 0;
+}
+/*课程目录*/
+.contents{
+	padding-left: 44px;
+	padding-top: 46px;
+}
+.contents li,a{
+	color: #505050;
+	font-size: 16px;
+}
+.contents li{padding-top: 20px;}
+.contents .iconfont{
+	font-size: 20px;
+	color: #505050;
+}
+.contents a{width: 246px;display: inline-block;color: #505050;fenxiangfenxiang}
+.contents a:hover{
+	color: red;
+}
+.contents .cont-time{
+	padding-right: 34px;
+}
+.contents .cont-ti{
+	padding-right: 24px;
+}

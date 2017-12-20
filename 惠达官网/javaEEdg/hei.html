@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>javaEE课程大纲</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+       <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+  </head>
+  <body>
+    <div class="headerWrap">
+      <div class="header">
+        <a href="../">
+          <img src="images/hd-logo.png" alt="">
+        </a>
+        
+        <ul class="header-nav">
+          <li><a href="../">首页</a></li>
+          <li><a href="../javaEEindex/">学科介绍</a></li>
+          <li class="header-active"><a href="#">课程大纲</a></li>
+          <li><a href="#">就业薪资</a></li>
+        </ul>
+      </div>
+    </div>
+     <script type="text/javascript">
+      $('.header-nav li').click(function() {
+        $(this).siblings().removeClass('header-active');
+        $(this).addClass('header-active');
+      })
+    </script>
+    <div class="bannerWrap">
+      <div class="banner">
+        <p class="title1 animated bounceInDown">Java层级式教学</p>
+        <div class="title2Wrap">
+          <p class="title2 animated slideInLeft">
+            专属职场的
+          </p>
+          <p class="empty"></p>
+          <p class="title2-1 animated slideInRight">
+            课程
+          </p>
+          <img class="te animated rotateIn" src="images/te.png" alt="">
+        </div>
+
+        <div class="zhufu animated flip">
+            祝你年薪
+          <img class="" src="images/20wan.png" alt="">
+        </div>
+        <img class="sanjiao1" src="images/sanjiao1.png" alt="">
+        <img class="sanjiao2" src="images/sanjiao2.png" alt="">
+        <img class="jinbi1" src="images/jinbi1.png" alt="">
+        <img class="jinbi2" src="images/jinbi2.png" alt="">
+        <img class="youqu animated rotateInUpRight " src="images/youqu.png" alt="">
+        <img class="zuoqu animated bounceInUp" src="images/zuoqu.png" alt="">
+
+      </div>
+        <img class="luo " src="images/luo.png" alt="">
+        <img class="chuline donghua4" src="images/chuline.png" alt="">
+        <img class="chu2line donghua5 " src="images/chu2line.png" alt="">
+        <img class="chu3line donghua6" src="images/chu3line.png" alt="">
+        <img class="teline donghua2" src="images/teline.png" alt="">
+        <img class="luoline donghua1" src="images/luoline.png" alt="">
+        <img class="qline4 donghua3" src="images/qline4.png" alt="">
+        <img class="luoline2 donghua7" src="images/luoline.png" alt="">
+    </div>
+    <div class="mainWrap">
+        <div class="main">
+          <div class="designli">
+              <div class="zhongxin">
+                <p class="p1">JavaEE</p>
+                <p>课程设计理念</p>
+              </div>
+              <div class="designli-in one wow bounceInLeft">
+                <div class="title">
+                  <div class="innertitle">
+                    <span class="yuan"></span>
+                    <span>夯实基础</span>
+                  </div>
+
+                </div>
+                <p>一栋大楼最重要的就是地基，JavaEE课程体系最重要的就<br />是Java基础，经过十年的沉淀,Java基础课程从张孝祥老师<br />创建传智播客以来在逐步的优化和完善，内容涵盖了Java<br />基础所有知识点，共包括计算机基础知识、编程基础、面<br />向对象、常用类介绍、集合、IO、多线程、网络编程、反<br />射、jdbc与MySql数据库等11个章节。夯实的基础知识为<br />JavaEE企业项目开发奠定坚实的基础。</p>
+              </div>
+              <div class="designli-in two wow bounceInRight">
+                <div class="title">
+                  <div class="innertitle r">
+                    <span class="yuan"></span>
+                    <span>由浅入深</span>
+                  </div>
+
+                </div>
+                <p>我们的学生大多数是零基础，我们采用由浅入深的思<br />想进行课程设计来保证学生的学习吸收效果。通常一<br />个知识点最开始都会设计快速入门。通过快速入门使<br />学生对该知识点的应用会有基本的认识。通过工作原<br />理的详细学习学生会对知识点特性的关系及作用从整<br />体上把握，最后学生通过案例练习形成自己的知识体<br />系，最终掌握知识点的应用方法。 </p>
+
+              </div>
+              <div class="designli-in three">
+                <div class="title">
+                  <div class="innertitle">
+                    <span class="yuan"></span>
+                    <span>真实案例</span>
+                  </div>
+
+                </div>
+                <p>课程的目标是学生灵活运用所学知识进行企业项目开<br />发，我们会针对知识点的不同特性设计贴近企业项目<br />的案例，案例的选材是从真实的企业项目中提取，需<br />要根据知识点的特性来设计案例的内容，从而实现学<br />完知识点后独立完成案例的目标。当学生独立完成案<br />例的开发基本就具备了企业项目开发的基础，最后学<br />生通过阶段综合案例、项目实战达到融会贯通。</p>
+
+              </div>
+              <div class="designli-in four">
+                <div class="title">
+                  <div class="innertitle r">
+                    <span class="yuan"></span>
+                    <span>项目实战</span>
+                  </div>
+
+                </div>
+                <p>项目是整个JavaEE课程体系中最重要的阶段，项目课<br />程是对所有知识点学习的检验，项目课程中也会讲解<br />一些当前流行的框架和技术， 最重要的是项目课程<br />中融入了很多项目实战内容，项目实战就是要求学生<br />独立根据需求文档及设计文档完成功能的开发，学生<br />在掌握了基础理论之后通过项目实战会真正掌握一个<br />
+                完整的项目从需求分析、设计、编码、测试、上线维<br />
+                护等整个开发流程，学生毕业即可进入企业进行项目<br />开发。</p>
+
+              </div>
+          </div>
+          <!-- JavaEE基础班课程大纲 -->
+          <div class="base">
+            <p class="baseTitle wow bounceInLeft">
+              <img src="images/pingxing.png" alt="">
+              <span>JavaEE基础班课程大纲</span>
+            </p>
+            <p class="baseTitle2">
+              <span></span>
+              惠达教育JavaEE课程大纲6个月助你成为Java软件开发大咖
+            </p>
+            <!-- 表 -->
+            <div class="biaoWrap wow pulse">
+                <div class="biaoTitle">
+                    <div class="btitle flex1">
+                        模块
+                    </div>
+                    <div class="btitle flex3">
+                        课程内容
+                    </div>
+                    <div class="btitle flex3">
+                        培养目标
+                    </div>
+                    <div class="btitle flex2">
+                        讲课代码
+                    </div>
+                </div>
+                <div class="biaoContent">
+                    <div class="Fbcontent flex1 bcolor">
+                      <p class="jieduan">第一阶段:</p>
+                      <p>JavaEE初级课程</p>
+                    </div>
+                    <div class="bcontent flex3">
+                      <div class="row">
+                         <p class="contenleft">java简介</p>
+                         <p class="contenright">java语法入门</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">控制结构</p>
+                         <p class="contenright">数组</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">封装I</p>
+                         <p class="contenright">封装II</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">继承</p>
+                         <p class="contenright">多态和内嵌类</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">练习面向对象</p>
+                         <p class="contenright">封装类和字符串</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">异常处理</p>
+                         <p class="contenright">常用工具类</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">枚举和泛型 </p>
+                         <p class="contenright">集合</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">输入/输出</p>
+                         <p class="contenright">Swing I</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">Swing II</p>
+                         <p class="contenright">搭建Swing框架</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">MYSQL I </p>
+                         <p class="contenright">MYSQL II</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">MYSQL数据库设计</p>
+                         <p class="contenright">JDBC I</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">JDBC Swing Mysql应用</p>
+                         <p class="contenright">JDBC II </p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">多线程</p>
+                         <p class="contenright">反射和自省</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Ireport报表</p>
+                         <p class="contenright">设计模式</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">操作xml</p>
+                         <p class="contenright">网络编程</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft"></p>
+                         <p class="contenright"></p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft"></p>
+                         <p class="contenright"></p>
+                      </div>
+
+                    </div>
+                    <div class="bcontent flex3">
+                      <div class="row">
+                         <p class="contenleft">Java的开发环境及开发Java程序的步骤</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">运算符，条件语句，运算符优先级</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">多重选择结构语法和执行过程 </p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">While,do-while</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">For 循环执行过程 </p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">理解为什么使用数组</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">在Java中应用面向对象编程,编写类和对象</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">以及如何创建对象</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">理解构造方法</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">掌握方法重载</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">运用Java实现继承</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">掌握方法重写</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">理解抽象类和接口的区别</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">运用接口进行编程</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">字符串不变性</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">了解List,Set,Map区别</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">掌握ArrayList</p>
+                      </div>
+                    </div>
+                    <div class="bcontent flex2">
+                      <div class="row">
+                         <p class="contenleft">Scanner交互</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">3个数排列大小</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">万年历</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">猜数字游戏</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">学生信息</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">管理系统</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">做面向对象习题</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">用面向对象的思想</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">做学生信息管理系统</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">包括院系，专业课程</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">角色等信息</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">操作系统查找功能读写文件</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">搭建就业管理系统框架</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">设计就业管理系统数据库</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">实现就业管理系统基本功能</p>
+                      </div>
+                      <div class="row">
+                          <p class="contenleft">导入代码库</p>
+                      </div>
+                       <div class="row">
+                          <p class="contenleft">多线程下载多线程通讯</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="biaoWrap wow pulse">
+                <div class="biaoTitle">
+                    <div class="btitle flex1">
+                        模块
+                    </div>
+                    <div class="btitle flex3">
+                        课程内容
+                    </div>
+                    <div class="btitle flex5">
+                        培养目标
+                    </div>
+
+                </div>
+                <div class="biaoContent">
+                    <div class="Fbcontent flex1 ycolor">
+                      <p class="jieduan">第二阶段:</p>
+                      <p>JavaEE语言进阶</p>
+                    </div>
+                    <div class="bcontent flex3">
+                      <div class="row">
+                         <p class="contenleft">Servlet开发详解</p>
+                         <p class="contenright">Struts异常处理</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">Servlet数据访问技术</p>
+                         <p class="contenright">Spring框架基础</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Servlet过滤器</p>
+                         <p class="contenright">Spring中的Bean</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">Servlet监听器</p>
+                         <p class="contenright">Spring事务管理</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">自定义标签</p>
+                         <p class="contenright">Hibernate概述</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">ModelⅡ开发模式</p>
+                         <p class="contenright">持久化操作</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">Oracle表和用户管理</p>
+                         <p class="contenright">关联关系映射</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">Oracle数据管理</p>
+                         <p class="contenright">搭建SSH项目</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">数据库的对象操作</p>
+                         <p class="contenright">SSH权限管理</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">事物、锁和表分区</p>
+                         <p class="contenright">SSH项目部署</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">PL/SQL数据库开发语言</p>
+                         <p class="contenright"></p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">函数与游标</p>
+                         <p class="contenright"></p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">存储过程与触发器</p>
+                         <p class="contenright"></p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Struts基础</p>
+                         <p class="contenright"></p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Struts国际化</p>
+                         <p class="contenright"></p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft"></p>
+                         <p class="contenright"></p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft"></p>
+                         <p class="contenright"></p>
+                      </div>
+                    </div>
+                    <div class="bcontent flex5">
+                      <div class="row">
+                         <p class="contenleft">Servlet部署过程</p>
+                         <p class="contenright">HttpSessionListener监听器实现</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">Servlet生命周期  </p>
+                         <p class="contenright">基于API创建标签处理程序类</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">HttpServletRequest接口详解  </p>
+                         <p class="contenright">标签处理程序类的描述与部署</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">ServletContext接口讲解  </p>
+                         <p class="contenright">SP页面中Taglib指令的使用</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">RequestDispatcher接口讲解</p>
+                         <p class="contenright">报表在Web应用中的调用过程</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">会话的概念</p>
+                         <p class="contenright">图形报表</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">基于Cookie与URL重写的会话跟踪方法</p>
+                         <p class="contenright">Oracle数据库逻辑结构</p>
+                      </div>
+
+ 
+
+
+                      <div class="row">
+                         <p class="contenleft">基于Cookie与URL重写的会话跟踪方法</p>
+                         <p class="contenright">表空间管理语句</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">基于Cookie的购物车实现</p>
+                         <p class="contenright">表空间管理语句</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Cookie中文编码处理</p>
+                         <p class="contenright">用户管理相关命令</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Servlet中实现MySql数据库连接</p>
+                         <p class="contenright">用户管理相关命令</p>
+                      </div>
+                       <div class="row">
+                         <p class="contenleft">Servlet中实现数据插入</p>
+                         <p class="contenright">授予权限与权限回收命令</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Servlet中实现数据修改</p>
+                         <p class="contenright">授予权限与权限回收命令</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Servlet中实现数据删除</p>
+                         <p class="contenright">Oracle数据库表的管理语句</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Servlet中实现数据查询</p>
+                         <p class="contenright">Oracle数据库表的管理语句</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Tomcat数据库连接池的实现</p>
+                         <p class="contenright">数据的增删改查语句</p>
+                      </div>
+                      <div class="row">
+                         <p class="contenleft">Servlet过滤器的编程与部署</p>
+                         <p class="contenright">参照完整性约束</p>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+          </div>
+          <!-- 学科项目介绍 -->
+
+        </div>
+    </div>
+      <!-- 学科项目介绍 -->
+      <!-- 项目1 -->
+
+
+
+  <div class="baomingWrap">
+    <div class="baoming">
+      <p class="baoTitle">
+        填写预报名
+      </p>
+      <p class="baoTip">
+        您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！
+      </p>
+      <form action="">
+        <ul class="tianWrap">
+            <li>
+              <img src="images/user.png" alt="">
+              <p>
+                <input type="text" name="" value="">
+                *真实姓名
+              </p>
+            </li>
+            <li>
+              <img src="images/shouji.png" alt="">
+              <p>
+                <input type="text" name="" value="">
+                *联系手机
+              </p>
+            </li>
+            <li>
+              <img src="images/qq.png" alt="">
+              <p>
+                <input type="text" name="" value="">
+                *QQ号码
+              </p>
+            </li>
+            <li>
+              <img src="images/baoming.png" alt="">
+              <p>
+                <input type="text" name="" value="">
+                *学科报名
+              </p>
+            </li>
+        </ul>
+
+        <div class="clear">
+        </div>
+        <button class="baoBtn" type="button" name="button">立即报名</button>
+      </form>
+    </div>
+  </div>
+  <iframe src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no"></iframe>
+  <!-- js -->
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script>
+  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+  	new WOW().init();
+  };
+  $(".tianWrap input").click(function(){
+      top.location.href="../bmlc/#bm"
+    }) 
+  // console.log($(document).scrollTop());
+  </script>
+
+
+  </body>
+
+</html>

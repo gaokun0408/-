@@ -1,0 +1,141 @@
+body,div,p,span{
+	margin:0;
+	padding:0;
+}
+.right,p,span{
+	cursor:default;
+}
+.banner-wrap{
+	width:100%;
+	height:878px;
+	background:url(../images/banner.png) no-repeat center;
+	background-size:cover;
+	overflow:hidden;
+}
+.banner{
+	width:1210px;
+	height:878px;
+	margin:0 auto;
+	/*overflow:hidden;*/
+	position:relative;
+}
+/*Android+物联网*/
+.banner .left{
+	width:460px;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:110px;
+	color:#00f6ff;
+	overflow:hidden;
+	margin-left:142px;
+	margin-top:275px;
+}
+.banner .left .add{
+	float:left;
+	text-indent:20px;
+}
+.banner .right{
+	width:422px;
+	height:180px;
+	float:left;
+	font-size:168px;
+	color:#fff;
+	margin-top:310px;
+}
+.banner .right img{
+	width:100%;
+}
+/*三角和线定位*/
+.banner .jiao1{
+	width:130px;
+	height:76px;
+	position:absolute;
+	top:394px;
+	right:-44px;
+	z-index:999;
+}
+.banner .jiao1 img{
+	width:100%;
+}
+.banner .jiao2{
+	width:90px;
+	height:104px;
+	position:absolute;
+	top:480px;
+	left:-56px;
+}
+.banner .jiao2 img{
+	width:100%;
+}
+.banner .line1{
+	width:450px;
+	height:410px;
+	position:absolute;
+	bottom:0px;left:-300px;
+	-webkit-animation:myfirst 2s;
+	/*z-index:3;*/
+}
+.banner .line1 img{
+	width:100%;
+}
+.banner .line2{
+	width:346px;
+	height:292px;
+	position:absolute;
+	bottom:1288px;left:1200px;
+	-webkit-animation:mysecond 2s 1s;
+	animation-fill-mode:forwards;
+	/*-webkit-animation-delay:mysecond 1s;*/
+}
+.banner .line2 img{
+	width:100%;
+}
+/*高薪，梦想*/
+.banner .bottom{
+	position:absolute;
+	bottom:220px;
+	left:430px;
+	/*width:520px;*/
+	color:#fff;
+	font-size:40px;
+	overflow:hidden;
+}
+.banner .bottom p{
+	float:left;
+}
+.banner .bottom .jian{
+	margin-right:16px;
+	margin-top:10px;
+}
+.banner .bottom .gaoxin{
+	width:98px;
+	margin-right:96px;
+}
+.banner .bottom .gaoxin img{
+	width:100%;
+}
+.banner .bottom .jia{
+	margin-right:16px;
+	margin-top:10px;
+}
+.banner .bottom .dream{
+	width:94px;
+	margin-right:16px;
+}
+.banner .bottom .dream img{
+	width:100%;
+}
+
+/*两条线的动画效果*/
+@-webkit-keyframes myfirst
+{
+from {bottom:1288px;left:1200px;}
+to {bottom:0px;left:-300px;}
+}
+@-webkit-keyframes mysecond
+{
+from {bottom:1288px;left:1200px;}
+to {bottom:10px;left:-240px;}
+}
+
+

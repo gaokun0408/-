@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册信息</title>
+    <script type="text/javascript" src='../public/api.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src='js/jquery-1.8.3.min.js'></script>
+     <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+    <script src="js/login.js"></script>
+    <style type="text/css">
+        .regi{display:none;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <video id="background_video" loop muted></video>
+        <div id="video_cover"></div>
+        <div id="overlay"></div>
+    </div>
+
+    <!-- 注册信息 -->
+	<div class="login-box" id="login-box">
+		<!-- <form action="http://www.hao123.com" class="login" id="login" method="post"> -->
+            <p class="zcinfor">注册信息</p>
+            <div class="userbox">
+                <span class="star">*</span>
+                <input type="text" placeholder="请输入用户名" maxlength="20" id="uname">
+            </div>
+            <span class="tip" id="tip">* 支持中文、字母、数字，4-20个字符。</span>
+
+            <div class="userbox">
+                <span class="star">*</span>
+                <input type="password" placeholder="请输入密码" maxlength="20" id="onepwd">
+            </div>
+            <span class="tip" id="tip">* 建议使用字母、数字和符号两种及以上的组合，6-20个字符。</span>
+            
+             <div class="userbox">
+                <span class="star">*</span>
+                <input type="password" placeholder="请再次输入密码" maxlength="20" id="twopwd" >
+            </div>
+
+            <!-- 密码强度 -->
+            <div class="pswq">
+                <span class="zzbg" id="week">弱</span><span class="zzbg" id="middle">中</span><span class="zzbg" id="strong">强</span>  
+            </div>
+            
+            <div class="userbox">
+                <span class="star">*</span>
+                <input type="text" placeholder="请输入手机号" id="inphone">
+            </div>
+            
+            <div class='yzbox'>
+                <input class="yzi" maxlength="6" type="text" id="pwd-sh" placeholder="请输入验证码" />
+                <input id="yzm" type="button" class="fs" value="获取验证码">
+            </div>
+            
+            <div class="tybox">
+                <div class="agree">
+                    <input class="fx" type="checkbox" checked id="check-sh"/><span class="me">我已阅读并同意</span><span class="lay">惠达程序员用户注册条款</span>
+                </div>
+            </div>
+
+
+            <p class="more">* 填写全部信息可观看更多视频</p>
+            <div class="line">
+                <img src="img/img1.png" alt="">
+                <input type="text" placeholder="姓名" value="" id="name"> 
+            </div>
+
+            <div class="line">
+                <img src="img/img4.png" alt="" value="" id="school">
+                <input type="text" placeholder="学校"> 
+            </div>
+
+            <div class="line">
+                <img src="img/img5.png" alt="">
+                <input type="text" placeholder="专业" value="" id="student"> 
+            </div>
+
+            <div class="line">
+                <img src="img/img6.png" alt="" value="" id="money">
+                <input type="text" placeholder="班级"> 
+            </div>
+            <input type="submit" class="sub-btn" id="subbtn" value="提交信息">
+        <!-- </form>   -->
+	</div>
+   
+</body>
+
+
+<script src="js/bideo.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</html>

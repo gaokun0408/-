@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>视频播放</title>
+	<link rel="stylesheet" type="text/css" href="css/play-index.css">
+	<link rel="stylesheet" type="text/css" href="icon/play-iconfont.css">
+	<link rel="stylesheet" href="css/paly.css">
+	<link rel="stylesheet" type="text/css" href="./style/pagination.css" media="screen">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<script type="text/javascript" src='../public/api.js'></script>
+	<script src="js/jQuery-1.8.3.min.js"></script>
+	 <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+	<style>
+		video {
+			display: inline-block;
+			width: 876px;
+			vertical-align: bottom;
+		}
+		.lgnbox{position: relative;}
+		.icon-sousuo{font-size: 24px;position: absolute;right: 2%;top: 1px;border:none;}
+	</style>
+
+</head>
+<body>
+	<!-- 弹窗 -->
+	<div class="cover-bg">
+		<div class="cover-win">
+			<div class="cover-img"></div>
+			<p id="close-btn"></p>
+			<a href="../dlzh/" id="cover-btn"></a>
+		</div>
+	</div>
+
+	<iframe src="html/nav.html" frameborder="0" width=100% height="90" scrolling="no"></iframe>
+
+ <!-- 观看视频 -->
+	<div class="videobox">
+		<div class="video">
+			<div class="lgnbox">
+				<p>课件1：破解Java工程师高薪之谜？</p>
+				<a href="../spxz/" class="return"> < 返回课题主页</a>
+				<a href="../dlzc/login.html" class="login">登录</a>
+				<a href="../dlzc/login.html" class="regi">注册</a>
+				<input type="text" class="search">
+				<a href="#"><i class="iconfont icon-sousuo"></i></a>
+				
+				<!-- 登录成功 -->
+				<div class="dl">
+					<div class="dllogo">
+						<img style="display: block;border-radius: 20px;" id="uimg" src="" class="dlimg">
+						<span class="name">惠达学员</span>
+						<img src="images/ico.png" class="icoimg">
+					</div>
+					<ul class="dlnew">
+						<li>
+							<img src="images/icon1.png" alt="">
+							<a href="#" >我的信息</a>
+						</li>
+
+						<li>
+							<img src="images/icon2.png" alt="">
+							<a href="#" >我的课程</a>
+						</li>
+
+						<li>
+							<img src="images/icon3.png" alt="">
+							<a href="#" >我的下载</a>
+						</li>
+
+						<li>
+							<img src="images/icon4.png" alt="">
+							<a href="#" >我的收藏</a>
+						</li>
+
+						<li>	
+							<img src="images/icon5.png" alt="">
+							<a href="#" >安全退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		<!-- 播放窗口 -->
+			<div class="playbox">
+				<div class="play">
+					<video id="vvv" width="876" height="490" controls>
+   						<source src="video/2.mp4" type="video/mp4">	
+					</video>
+
+					<div id="a1" class="box"></div>
+					<div class="share">
+						<i class="iconfont icon-xihuan love"></i>
+						<i class="iconfont icon-zanzhuanhuan0101 love"></i>
+						<span href="#" class="like xh">喜欢</span>
+						<span href="#" class="like sh">分享</span>
+					</div>
+
+				</div>
+				
+				<div class="playcon">
+					<div class="playlist">
+						<span>正在播放</span><span><上一个</span><span>下一个></span>
+					</div>
+
+					<div class="playsee">
+						<p class="ptitle">【视频】破解Java工程师高薪之谜</p>
+						<p class="ptime">[05:41]</p>
+						<i  class="iconfont icon-guankan"></i><span class="see">观看：<span id="gk">33</span>次</span><i id="ul" class="iconfont icon-xiazai"></i><span class="dload">下载：<span id="dw">33</span>次</span>
+					</div>
+
+					<p class="desc">
+						本视频是惠达javaEE学院精心录制的精华版web基础视频，该视频特点在于较大程度保证了知识点的完整性，视频的起点都是针对有一定web基础的同学的。引入MVC设计模式，技术点有:servlet的常见api、Redis、ajax、BootStrap、Filter、解耦合思想、动态代理的应用、layer等。
+					</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- 课程目录、评论区 -->
+	<div class="news-wrap">
+		<div class="news-nav">
+			<div class="news-top">
+				<ul class="ul-top">
+					<li class="course bord">课程目录</li>
+					<li id="tjk" class="course">推荐观看</li>
+					<li class="course">课程评论</li>
+				</ul>
+				<div class="news-right newsright">
+					<i class="iconfont icon-qzone iconfx" id=" icon-qzone"></i>
+					<i class="iconfont icon-xinlangweibo iconfx"></i>
+					<i class="iconfont icon-weixin iconfx"></i>
+					<div class="fenxiang">
+						<span class="kongjian fx">分享到空间</span>
+						<span class="weibo fx">分享到微博</span>
+						<span class="weixin fx">分享到微信</span>
+					</div>
+				</div>	
+			</div>
+			
+			<!-- 课程目录 -->
+				<ul class="contents" id="ml">
+					<li>
+						<span >01</span>
+						<span>【视频】</span>
+						<a href="#">MAVEN精品教程</a>
+						
+						<span class="cont-time">[6:12]</span>
+						<i class="iconfont icon-guankan"></i>
+						<span>观看：</span><span class="cont-ti">123</span>
+						<i class="iconfont icon-xiazai"></i>
+						<span>下载：</span><span>321</span>
+					</li>
+				</ul>
+				<!-- 视频推荐 -->
+				<ul class="contents none" id="tj">
+					<li>
+						<span>01</span>
+						<span>【视频】</span>
+						<a href="#">MAVEN精品教程</a>
+						
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>02</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>03</span>
+						<span>【视频】</span>
+						<a href="#">MAVEN精品教程</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>04</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>05</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>06</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+				</ul>
+				<!-- 评论列表 -->
+				<ul class="contents none">
+					<div class="comlist">
+						<img src="images/img1.png" alt="">
+						<div class="comtxt">
+							<span class="name">Beautiful</span><span class="comtime">2016-12-11说：</span>
+							<p>一直想转行做java，但是没有一点基础，看完这个短视频介绍，突然对自己有信心了。</p>
+						</div>
+						<i class="iconfont icon-pinglun"></i><i class="iconfont icon-zan2"></i>
+					</div>
+
+					<div class="comlist">
+						<img src="images/img1.png" alt="">
+						<div class="comtxt">
+							<span class="name">Beautiful</span><span class="comtime">2016-12-11说：</span>
+							<p>一直想转行做java，但是没有一点基础，看完这个短视频介绍，突然对自己有信心了。</p>
+						</div>
+						<i class="iconfont icon-pinglun"></i><i class="iconfont icon-zan2"></i>
+					</div>
+
+					<div class="comlist">
+						<img src="images/img2.png" alt="">
+						<div class="comtxt">
+							<span class="name">Beautiful</span><span class="comtime">2016-12-11说：</span>
+							<p>一直想转行做java，但是没有一点基础，看完这个短视频介绍，突然对自己有信心了。</p>
+						</div>
+						<i class="iconfont icon-pinglun"></i><i class="iconfont icon-zan2"></i>
+					</div>
+
+					<div class="comlist">
+						<img src="images/img3.png" alt="">
+						<div class="comtxt">
+							<span class="name">Beautiful</span><span class="comtime">2016-12-11说：</span>
+							<p>一直想转行做java，但是没有一点基础，看完这个短视频介绍，突然对自己有信心了。</p>
+						</div>
+						<i class="iconfont icon-pinglun"></i><i class="iconfont icon-zan2"></i>
+					</div>
+
+					<div class="comlist">
+						<img src="images/img4.png" alt="">
+						<div class="comtxt">
+							<span class="name">Beautiful</span><span class="comtime">2016-12-11说：</span>
+							<p>一直想转行做java，但是没有一点基础，看完这个短视频介绍，突然对自己有信心了。</p>
+						</div>
+						<i class="iconfont icon-pinglun"></i><i class="iconfont icon-zan2"></i>
+					</div>
+				</ul>
+
+				<ul class="contents none">
+					<li>
+						<span>01</span>
+						<span>【视频】</span>
+						<a href="#">精品教程</a>
+						
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>02</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>03</span>
+						<span>【视频】</span>
+						<a href="#">MAVEN精品教程</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>04</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>05</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+					<li>
+						<span>06</span>
+						<span>【视频】</span>
+						<a href="#">JavaEE开发之spring框架</a>
+						<span class="cont-time">[6:12]</span>
+						<span>78人学习</span>
+					</li>
+				</ul>
+		</div>
+
+	</div>	
+	<!-- 页数 -->
+	<div class="pagebox">
+		<div class="eg">
+            <div class="M-box1"></div>
+		</div>
+	</div>
+
+		<!-- 在线咨询 -->
+	<div class="olbox">
+		<i class="iconfont icon-zaixianzixun"></i>
+		<span>在</span>
+		<span>线</span>
+		<span>咨</span>
+		<span>询</span>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//随机函数
+		function getrandom(num1,num2) {
+	      var ca = num2 - num1 + 1;
+	      return Math.floor(Math.random()*ca+num1);
+	    };
+
+	    var qqs = ['1535259680','246381818','154539188'];
+	    
+	    $('.olbox').click(function(){
+	    	window.location.href="tencent://message/?uin="+qqs[getrandom(0,2)]+"&Site=&Menu=yes";
+	    })
+
+	})
+</script>
+
+	
+
+	<iframe src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no"></iframe>
+	
+		<script src='js/jquery-1.11.0.min.js'></script>
+	<script src="./script/jquery.pagination.js"></script>
+	<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/play.js"></script>
+
+</body>
+</html>

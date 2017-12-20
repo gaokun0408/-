@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>惠达官网</title>
+	<link rel="stylesheet" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src='../public/api.js'></script>
+	<link rel="stylesheet" href="css/animate.css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$.post(metapi,function(data){
+				$("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+				$("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+			})			
+		})
+	</script>
+	<!-- 地址栏中最前面的缩略logo -->
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+<div class="container">
+
+<!-- 头部  logo   区域 -->
+<div class="header">
+	<div class="header-con">
+		<a href="#" class="header-logo">
+			<img src="images/logo.png" alt="">
+		</a>
+		<div class="header-biaoyu">
+			<img src="images/biaoyu.jpg" alt="">
+		</div>
+	</div>
+</div>
+
+<!-- 导航菜单   区域 -->
+<div class="nav-menu">
+	<div class="nav-menu-con">
+		<div class="a-btn" id="kcjs">
+			<a href="#" class="btn-1">
+				<span class="iconfont icon-gn"> </span>课程介绍
+			</a>
+			<ul>
+				<li>
+					<a href="JavaEEindex/" id="list">JavaEE培训<span class="iconfont icon-xiangyou"></span></a>
+				</li>
+				<li>
+					<a href="Androidindex/" id="list">Android+物联网<span class="iconfont icon-xiangyou"></span></a>
+				</li>
+				<li>
+					<a href="H5index/" id="list">H5+全栈工程师<span class="iconfont icon-xiangyou"></span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="a-btn">
+			<a href="spxz/">视频下载</a>
+		</div>
+		<div class="a-btn">
+			<a href="gkk/">公开课</a>
+		</div>
+		<div class="a-btn">
+			<a href="szll/">师资力量</a>
+		</div>
+		<div class="a-btn">
+			<a href="jszq/">技术专区</a>
+		</div>
+		<div class="a-btn">
+			<a href="bmlc/">报名流程</a>
+		</div>
+		<div class="a-btn">
+			<a href="company/">学校介绍</a>
+		</div>
+	</div>
+</div>
+
+<!-- 海报  区域 -->
+<div class="tp-banner-container">
+	<div class="tp-banner">
+		<ul id="img">
+		
+            <!-- <li  data-transition="curtain-3" data-slotamount="" id="img">
+			     <img src="http://www.huidapeixun.com/lbimg/20170813/942ffb4a2c0248a163a267a1c2f8246a.png" /> 
+		    </li> -->
+
+		</ul>
+		<div class="tp-bannertimer tp-bottom"></div>
+	</div>
+</div>
+
+<!-- 海报下面的  四块 区域 -->
+<div class="kuai-4">
+	<div class="kuai-4-con">
+		<div class="kuai-list">
+			<div class="kuai-4-title">高薪就业</div>
+			<div class="kuai-line"></div>
+			<div class="kuai-desc">体系课程紧跟职场需求</div>
+			<div class="kuai-desc kuai-bold">高薪就业</div>
+		</div>
+		<div class="kuai-list">
+			<div class="kuai-4-title kuai-color-2">营造优越环境</div>
+			<div class="kuai-line kuai-bg-2"></div>
+			<div class="kuai-desc">紧挨燕山、科师等高校</div>
+			<div class="kuai-desc kuai-bold">优越环境</div>
+		</div>
+		<div class="kuai-list">
+			<div class="kuai-4-title kuai-color-3">名师讲堂</div>
+			<div class="kuai-line kuai-bg-3"></div>
+			<div class="kuai-desc">多年工作经验精英讲师</div>
+			<div class="kuai-desc kuai-bold">名师讲堂</div>
+		</div>
+		<div class="kuai-list">
+			<div class="kuai-4-title kuai-color-4">500强合作</div>
+			<div class="kuai-line kuai-bg-4"></div>
+			<div class="kuai-desc">人才培养计划从未停止</div>
+			<div class="kuai-desc kuai-bold">500强合作</div>
+		</div>
+	</div>
+</div>
+
+<!-- 新闻  专题   信息  快 -->
+<div class="info">
+	<div class="info-con">
+
+		<div class="hdzt">
+			<div class="hdzt-top">惠达专题</div>
+			<div class="hdzt-bottom"><img src="images/hdzt.jpg" alt=""></div>
+		</div>
+
+
+		<div class="news-slide">
+			<a href="javascript:;" class="ctrlLR" id="ctrlLR-1"><</a>
+			<a href="javascript:;" class="ctrlLR" id="ctrlLR-2">></a>
+			<div class="news-slide-box">
+
+
+
+				<!-- <div class="info-con-center qwer">
+					<img src="images/info-center.jpg" alt="">
+					<div class="info-art">
+						<p>码农的天敌来了</p>
+						<div class="info-art-con">
+							等哈啥丢哈酒大计算机的辉案件达科技打卡机大当家静安寺短时间的爱打架卡进度睡大觉爱的极地金岸 打开 带回家啊惠达爱打架阿萨德 短时大家大家啊卡萨丁按时椴树都有哈苏都是大带回家啊和
+						</div>
+					</div>
+				</div> -->
+
+			</div>
+		</div>
+
+
+		<div class="info-con-right">
+			<div class="hdzt">
+				<div class="hdzt-top hdzt-news">惠达专题</div>
+				<div class="hdzt-bottom hdzt-news2"><img src="images/hdzt-news.jpg" alt=""></div>
+			</div>
+
+			<div class="hdzt-news-list">
+				<div class="hdzt-news-list-no1P">惠达头条</div>
+				<a href=""><p><span>· </span> 2017都会sadsadasd觉得和呼和的呼和的和的呼和的aasas</p></a> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 就业 薪资  模块 -->
+<div class="nav-title">
+	<div class="nav-title-con">
+		<p>就业薪资</p>
+	</div>
+</div>
+
+<div class="jyxz">
+	<div class="jyxz-con">
+		<div class="jyxz-box">
+
+
+
+			<div class="jyxz-info">
+				<div class="jyxz-info-left">
+					<span class="iconfont icon-java"></span>
+					<p>HD0012班</p>
+				</div>
+				<div class="jyxz-info-right">
+					<p>【平均薪资8900】</p>
+					<div class="jyxz-info-right-con">
+						&nbsp;&nbsp;javaEE就业
+					</div>
+				</div>
+			</div>
+
+
+			<div class="jyxz-info">
+				<div class="jyxz-info-left">
+					<span class="iconfont icon-android" id="jyxz-color-2"></span>
+					<p>HD003班</p>
+				</div>
+				<div class="jyxz-info-right">
+					<p>【平均薪资8500】</p>
+					<div class="jyxz-info-right-con">
+						&nbsp;Android+物联网
+					</div>
+				</div>
+			</div>
+
+
+			<div class="jyxz-info">
+				<div class="jyxz-info-left">
+					<span class="iconfont icon-android"></span>
+					<p>HD007班</p>
+				</div>
+				<div class="jyxz-info-right">
+					<p>【平均薪资8700】</p>
+					<div class="jyxz-info-right-con">
+						&nbsp;Android+物联网
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="jyxz-prev" id="jyxz-prev"><</div>
+		<div class="jyxz-prev jyxz-next" id="jyxz-next">></div>
+	</div>
+</div>
+
+<!-- 就业学员 -->
+<div class="story-wrap">
+	<div class="story">
+		<p class="study-story">就业学员</p>
+
+
+		<div class="story-nav story-left xygsAnima">
+			<div class="story-img1">
+				<img alt="" src="images/hdzt-news.jpg">
+			</div>
+			<a href="homePage_studentDetails.action?student.sid=${sid}">
+				<div class="story-text">
+					<p>${name}</p>
+					<p>${className }</p>
+					<p>单位：${workUnit}</p>
+					<p>月薪：<span>${salary}</span></p>
+				</div>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+<div class="clear"></div>
+<!-- 学习资源 -->
+<div class="learn-wrap" id="zy">
+	<div class="learn">
+		<div class="learn-head">
+			<span class="learn-story">学习资源</span>
+			<a href="../gkk/index.html" class="learna learn-open">公开课</a>
+			<a href="../spxz/video.html" class="learna learn-flv">视频下载</a>
+			<a href="#" class="learna learn-study">学习线路图</a>
+		</div>
+
+
+		<div class="open block">
+			<div class="learn-img learn-left">
+				<a href="../spbf/">
+					<img src="images/learn-img1.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img3.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img4.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img learn-left">
+				<a href="../spbf/">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img1.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img5.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 视频下载 -->
+		<div class="open">
+			<div class="learn-img learn-left">
+				<a href="../spbf/">
+					<img src="images/learn-img1.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img3.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img4.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img learn-left">
+				<a href="../spbf/">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img1.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="../spbf/">
+					<img src="images/learn-img5.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="#">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 学习线路图 -->
+		<div class="open">
+			<div class="learn-img learn-left">
+				<a href="#">
+					<img src="images/learn-img1.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="learn-img">
+				<a href="#">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="#">
+					<img src="images/learn-img3.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="#">
+					<img src="images/learn-img4.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img learn-left">
+				<a href="#">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="#">
+					<img src="images/learn-img1.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="#">
+					<img src="images/learn-img5.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+			<div class="learn-img">
+				<a href="#">
+					<img src="images/learn-img2.png">
+				</a>
+				<div class="learn-text">
+					<a href="#">
+						<p>打火机爱护对回电话d卡皇帝的设计好的啊哈</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 课程中心 -->
+<div class="class-center">
+	<p><span></span>课程中心</p>
+	<div class="javeEE">
+		<img class="javeEE-loge" src="images/javaEE.jpg" alt="">
+		<div class="javeEE-intr">
+			<div class="javeEE-cen">
+				<div class="javeEE-cen-top">
+					<div class="top-left">
+						
+						<a href="../JavaEEindex/"><img src="images/a.jpg" alt=""></a>
+						<p>学科介绍</p>
+					</div>
+
+					<div class="top-left">
+						<a href="../javaEEdg/"><img src="images/c.jpg" alt=""></a>
+						<p>课题大纲</p>
+					</div>
+					<div class="top-left">
+						<a href="#"><img src="images/b.jpg" alt=""></a>
+						<p>就业薪资</p>
+					</div>
+				</div>
+				<div class="javeEE-cen-bottom">
+					<p>Java教程+配套教程笔记+面试就业+实用技术</p>
+					<span><a href="#">立即获取</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="javeEE">
+		<img class="javeEE-loge" src="images/android.jpg" alt="">
+		<div class="javeEE-intr">
+			<div class="android-cen">
+				<div class="javeEE-cen-top">
+					<div class="top-left">
+						<a href="../Androidindex/"><img src="images/a1.jpg" alt=""></a>
+						<p>学科介绍</p>
+					</div>
+
+					<div class="top-left">
+						<a href="../Androiddg/"><img src="images/c1.jpg" alt=""></a>
+						<p>课题大纲</p>
+					</div>
+					<div class="top-left">
+						<a href="#"><img src="images/b1.jpg" alt=""></a>
+						<p>就业薪资</p>
+					</div>
+				</div>
+				<div class="android-cen-bottom">
+					<p>实体班授课视频+配套笔记</p>
+					<span><a href="#">立即获取</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="javeEE">
+		<img class="javeEE-loge" src="images/h5.jpg" alt="">
+		<div class="javeEE-intr">
+			<div class="h5-cen">
+				<div class="javeEE-cen-top">
+					<div class="top-left">
+						<a href="../H5index/"><img src="images/a2.jpg" alt=""></a>
+						<p>学科介绍</p>
+					</div>
+
+					<div class="top-left">
+						<a href="../H5dg/"><img src="images/c2.jpg" alt=""></a>
+						<p>课题大纲</p>
+					</div>
+					<div class="top-left">
+						<a href="#"><img src="images/b2.jpg" alt=""></a>
+						<p>就业薪资</p>
+					</div>
+				</div>
+				<div class="h5-cen-bottom">
+					<p>微信小程序多套源码合集分享</p>
+					<span><a href="#">立即获取</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- 本周热门 -->
+<div class="hot-week">
+	<span class="red-week"></span>
+	<p>活动专区</p>
+<!-- 	<a href="#"><span class="kai-ban currentNavCol">活动专区</span></a> -->
+	<div class="pic-six">
+		<div class="pic-six-top">
+			<!-- <div class="top-pic3 bzrmAnima">
+				<img src="images/banner-1.jpg" alt="">
+				<p><span>12017年下乡扶贫</span><span>大家阿卡好费劲啊交话费</span></p>
+			</div>
+			<div class="top-pic3 bzrmAnima">
+				<img src="images/banner.jpg" alt="">
+				<p><span>2017年下乡扶贫</span><span>大家阿卡好费劲啊交话费</span></p>
+			</div>
+			<div class="top-pic3 bzrmAnima">
+				<img src="images/week-pic3.png" alt="">
+				<p><span>2017年下乡扶贫</span><span>大家阿卡好费劲啊交话费</span></p>
+			</div> -->
+		</div>
+		<div class="pic-six-bottom">
+			<!-- <div class="top-pic3 bzrmAnima">
+				<img src="images/week-pic4.png" alt="">
+				<p><span>2017年下乡扶贫</span><span>大家阿卡好费劲啊交话费</span></p>
+			</div>
+			<div class="top-pic3 bzrmAnima">
+				<img src="images/week-pic5.png" alt="">
+				<p><span>2017年下乡扶贫</span><span>大家阿卡好费劲啊交话费</span></p>
+			</div>
+			<div class="top-pic3 bzrmAnima">
+				<img src="images/week-pic6.png" alt="">
+				<p><span>2017年下乡扶贫</span><span>大家阿卡好费劲啊交话费</span></p>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+<!-- 校园环境 -->
+<div class="school-envi">
+	<p class="ppppp"><span></span>校园环境</p>
+	<div class="school-box">
+
+
+		<div class="school-box-slide">
+			<div class="school-box-img">
+				<img src="images/office-pic1.png" alt="">
+				<!-- <p>办公环境</p> -->
+			</div>
+			<div class="school-box-img">
+				<img src="images/office-pic7.png" alt="">
+				<!-- <p>办公环境</p> -->
+			</div>
+			<div class="school-box-img">
+				<img src="images/office-pic3.png" alt="">
+				<!-- <p>办公环境</p> -->
+			</div>
+			<div class="school-box-img">
+				<img src="images/office-pic4.png" alt="">
+				<!-- <p>办公环境</p> -->
+			</div>
+			<div class="school-box-img">
+				<img src="images/office-pic5.png" alt="">
+				<!-- <p>办公环境</p> -->
+			</div>
+			<div class="school-box-img">
+				<img src="images/office-pic6.png" alt="">
+				<!-- <p>办公环境</p> -->
+			</div>
+		</div>
+
+		<a href="javascript:;" class="azx" id="school-prev">〈</a>
+		<a href="javascript:;" class="azx" id="school-next">〉</a>
+	</div>
+	<div class="H-four animated zoomInDown">
+		<div class="H-first footerBtn">
+			<img src="images/H-study.png" alt="">
+			<a href="#"><p>学习分享视频教程</p></a>
+		</div>
+		<div class="H-second footerBtn">
+			<img src="images/H-people.png" alt="">
+			<a href="#"><p>师资力量强大</p></a>
+		</div>
+		<div class="H-third footerBtn">
+			<img src="images/H-write.png" alt="">
+			<a href="#"><p>培训教育资料</p></a>
+		</div>
+		<div class="H-forth footerBtn">
+			<img src="images/H-money.png" alt="">
+			<a href="#"><p>年薪十万保就业</p></a>
+		</div>
+	</div>
+</div>
+
+<!-- footer -->
+<iframe class="new-footer" src="./public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no">
+</iframe>
+
+<!-- 侧边栏   定位  咨询 -->
+<div class="cebianl">
+	<div class="lxkf">
+		<a href="#"><img src="images/lxkf.jpg" alt="" /></a>
+	</div>
+
+
+	<div class="cebianl-list">
+		<p><a href="#">匿名咨询 &nbsp;></a></p>
+		<p><a id="qq" href="#">QQ咨询  &nbsp;&nbsp;&nbsp;></a></p>
+		<p><a href="../bmlc/#bm">立即报名 &nbsp;></a></p>
+		<!-- 修改 -->
+		<p class="tel"><a href="#">电话咨询 &nbsp;></a><a href="#">0335-3691237</a></p>
+		
+	</div>
+
+
+
+	<div class="return-top">
+		<a href="#"><img src="images/return-top.jpg" alt="" /></a>
+	</div>
+</div>
+
+</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+
+
+
+</html>

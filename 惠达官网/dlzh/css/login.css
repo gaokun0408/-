@@ -1,0 +1,24 @@
+body{background:url(../images/bgimg5.png) no-repeat center 0;background-size: cover;font-family: '微软雅黑';color: #787878;}
+*{margin:0;padding:0;}
+a{text-decoration: none;}
+li{list-style: none;}
+input{outline: none;}
+span,p,input{cursor:default;}
+
+
+.login-box{width:440px;height: 547px;margin-top:4%;border:2px solid #fff;background: rgba(215,251,255,0.3);border-radius: 10px;position:relative}
+.dl{font:24px "微软雅黑";color:#414643;margin-top: 40px;margin-bottom: 36px;text-align: center;cursor:pointer;}
+.me{display: block;margin:0 auto;margin-bottom: 28px;}
+.star{display:inline-block;position:absolute;left: 40px;top: 188px;font-size: 34px;color:#f4800e;}
+.star1{position: absolute;left: 40px;top: 248px;}
+.sjnum{width: 312px;height: 46px;margin-left: 12px;margin-bottom: 16px;text-indent:12px;font-size: 16px;color:#8d8c8c;}
+.use{font-size: 16px;color:#fff;margin-bottom: 24px;}
+.qqdl i,.wxdl i{font-size: 56px;}
+.qq{display: inline-block;margin-right: 28px;}
+.login-btn{display: block;width: 160px;height: 40px;margin:0 auto;margin-top: 30px;background-color:#009944;
+	border-radius:20px;font-size:22px;text-align: center;line-height: 40px;color:#fff;}
+
+/*发送验证码*/
+.yzbox{width: 312px;height: 36px;margin-top: 10px;margin-bottom: 16px;overflow: hidden;margin-left: 68px;}
+.yzi{float: left;width:156px;height:36px;/*margin-right:30px;*/text-indent:10px;background-color: rgba(245,242,242,0.6);border-radius:0;border:none;border:1px solid #fff;}
+.yzbox .fs{display:inline-block;float: right;width:130px;height:36px;border:1px solid #07913a;border-radius:10px;background-color: rgba(245,242,242,0.6);color:#787878;outline:none;}

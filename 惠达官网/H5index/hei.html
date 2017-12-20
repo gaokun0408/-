@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>H5学科介绍</title>
+	<link rel="stylesheet" href="css/android.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/index_style.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<script type="text/javascript" src='js/jquery-3.2.0.min.js'></script>
+	<script type="text/javascript" src='js/android.js'></script>
+	<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+	<script type="text/javascript" src='js/echarts.js'></script>
+		 <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+	<style type="text/css">
+		@font-face {
+		  font-family: 'iconfont';
+		  src: url('fonts/iconfont.eot');
+		  src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+		  url('fonts/iconfont.woff') format('woff'),
+		  url('fonts/iconfont.ttf') format('truetype'),
+		  url('fonts/iconfont.svg#iconfont') format('svg');
+		}
+		.iconfont{
+		  font-family:"iconfont" !important;
+		  font-size:60px;font-style:normal;
+		  -webkit-font-smoothing: antialiased;
+		  -webkit-text-stroke-width: 0.2px;
+		  -moz-osx-font-smoothing: grayscale;
+		  /*color:#A7D82E;*/
+		  color: #3889e1;
+		  margin-right:75px;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 导航条 -->	
+   <!--  <div class="headerWrap">
+      <div class="header">
+        <img src="img/huida-ico.png" alt="">
+        <ul class="header-nav">
+          <li><a href="../../GW/index.html" class="page1" target="blank">首页</a></li>
+          <a href="../../JavaEE课程页面/course.html" class="page2" target="_blank">JavaEE</a>
+          <li><a href="../../Android课程介绍/index.html" target="_blank">Android+物联网</a></li>
+          <a href="../../H5课程大纲页面/h5index.html" class="page1" target="blank" class="page4">H5+全栈工程师</a>
+        </ul>
+      </div>
+    </div> -->
+    <div class="headerWrap">
+      <div class="header">
+      	<a href="../">
+      		<img src="img/huida-ico.png" alt="">
+      	</a>
+        
+        <ul class="header-nav">
+          <li><a href="../">首页</a></li>
+          <li class="header-active"><a href="../H5index/">学科介绍</a></li>
+          <li><a href="../H5dg/">课程大纲</a></li>
+          <li><a href="#">就业薪资</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $('.header-nav li').click(function() {
+        $(this).siblings().removeClass('header-active');
+        $(this).addClass('header-active');
+      })
+    </script>
+	
+	<!-- banner -->
+	<div class="bannerbox">
+		<img src="img/cloud1.png" alt="" class="cloud1 wow rollIn">
+		<img src="img/cloud2.png" alt="" class="cloud2 wow rollIn">
+		<img src="img/point1.png" alt="" class="point1">
+		<img src="img/point2.png" alt="" class="point2">
+		<img src="img/point4.png" alt="" class="point3">
+		<div class="banner">
+			<img src="img/quan.png" class="engineer wow bounceInDown" alt="">		
+			<div>
+				<p class="run wow shake">做高薪的领跑者</p>
+				<img src="img/rili.png" alt="" class="rili wow lightSpeedIn">
+			</div>
+			<img src="img/star1.png" alt="" class="star1 animated infinite tada">
+			<img src="img/star2.png" alt="" class="star2 animated infinite tada">
+			<span class="yuan fyuan"></span>
+			<span class="it wow swing">无需IT行业背景</span>
+			<span class="yuan"></span>
+			<span class="it wow swing">零基础 </span>
+			<span class="yuan"></span>
+			<span class="it wow swing">小班授课</span>
+			<span class="yuan"></span>
+			<span class="it wow swing">实战型学习</span>
+			<span class="yuan"></span>
+			<span class="it wow swing">总监级导师</span>
+			<img src="img/mouse.png" alt="" class="mouse wow swing">
+			<img src="img/keyboard.png" alt="" class="kbd wow bounceInRight">
+		</div>
+		<img src="img/cloud3.png" alt="" class="cloud3 wow bounceInLeft">
+		<img src="img/cloud4.png" alt="" class="cloud4 wow bounceInLeft">
+		<img src="img/point4.png" alt="" class="point4">
+		<img src="img/point5.png" alt="" class="point5">
+	</div>	
+	<!-- 开课时间 -->
+	<div class="kktime">
+		<div class="kktime-bg-icon">
+			<img src="img/timebg1.png" alt="">
+			<img src="img/timebg.png" alt="">
+		</div>
+		<div class="kktime-con">
+			<div class="kktime-tit">
+				<div class="kktime-tit-box animated bounceInLeft">
+					<img class="animated infinite" src="img/tit.png" alt="">
+					<!-- <img class="animated infinite" src="img/dtright.png" alt=""> -->
+				</div>
+				<div class="kktime-tit-box animated bounceInRight"></div>
+				<div class="kktime-tit-box animated fadeInDown">开课时间</div>
+			</div>
+			<div class="kktime-list">
+				<div class="kktime-list-left">
+					<ul>
+						<li class="animated">H5+全栈工程师基础班2017-05-23 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+						<li class="animated">H5+全栈工程师基础班2017-05-23 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+						<li class="animated">H5+全栈工程师基础班2017-05-23 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+					</ul>
+				</div>
+				<div class="kktime-list-right">
+					<ul>
+						<li class="animated ">H5+全栈工程师基础班2017-05-23 <img src="img/fire.png" alt=""> <span>抢座</span> </li>
+						<li class="animated ">H5+全栈工程师基础班2017-05-23 <img src="img/fire.png" alt=""> <span>抢座</span> </li>
+						<li class="animated ">H5+全栈工程师基础班2017-05-23 <img src="img/fire.png" alt=""> <span>抢座</span> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- web江湖 -->
+	<div class="web-con">
+		<div class="web-c">
+			<div class="kktime-tit web-tit">
+				<div class="kktime-tit-box animated">
+					<img class="animated infinite" src="img/tit.png" alt="">
+					<!-- <img class="animated infinite" src="img/kkleft.png" alt="">
+					<img class="animated infinite" src="img/dtright.png" alt=""> -->
+				</div>
+				<div class="kktime-tit-box animated"></div>
+				<div class="kktime-tit-box animated">3分钟带你领略web江湖</div>
+			</div>
+		</div>		
+	</div>
+	<div class="funcwrap">
+		<div class="function">
+			<div class="pink">
+				<div class="picwrap wow bounceInLeft">
+					<img src="img/pink.png" alt="">
+				</div>
+				<div class="conwrap wow bounceInUp" data-wow-delay="0.5s">
+					<p class="title">直播正盛</p>
+					<p class="con">
+						2016年被誉为直播元年，直播作为现象级风口已成为互联网领域新的经济增长点，而直播平台从技术上需要更多懂前后端的全栈工程师来实现。
+					</p>
+				</div>
+			</div>
+			<div class="blue">
+				<div class="picwrap wow bounceInDown">
+					<img src="img/blue.png" alt="">
+				</div>
+				<div class="conwrap wow bounceInUp" data-wow-delay="0.5s">
+					<p class="title">小程序</p>
+					<p class="con">
+						微信“小程序”无疑是下一风口，大众对这种轻型“APP”无限期待，前端已火了很多年，小程序的出现将会延续前端火爆热度，如果你恰巧也懂后端，那更会让你更如鱼得水。
+					</p>
+				</div>
+			</div>
+			<div class="yellow">
+				<div class="picwrap wow bounceInDown" data-wow-delay="0.2s">
+					<img src="img/yellow.png" alt="">
+				</div>
+				<div class="conwrap wow bounceInUp" data-wow-delay="0.5s">
+					<p class="title">全民创业</p>
+					<p class="con">
+						“互联网+”风口催生全民创业潮，对于创业公司来说，不可能像大公司一样，招聘过于细分的人才。这些公司更需要独当一面的全栈人才。
+					</p>
+				</div>
+			</div>
+			<div class="green">
+				<div class="picwrap wow bounceInRight">
+					<img src="img/green.png" alt="">
+				</div>
+				<div class="conwrap wow bounceInUp" data-wow-delay="0.5s">
+					<p class="title">直播盛典</p>
+					<p class="con">
+						2016年被誉为直播元年，直播作为现象级风口已成为互联网领域新的经济增长点，而直播平台从技术上需要更多懂前后端的全栈工程师来实现。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- android -->
+	<div class="android">
+		<div class="android-bg-icon">
+			<img src="img/jyxz-bg.png" alt="">
+			<img src="img/jyxz-bg1.png" alt="">
+			<img src="img/jyxz-bg2.png" alt="">
+			<img src="img/jyxz-bg3.png" alt="">
+		</div>
+		<!-- 就业薪资 -->
+		<div class="slybox">
+			<div class="web-con slybox-tit">
+				<div class="web-c">
+					<div class="kktime-tit slyboxx-tit">
+						<div class="kktime-tit-box animated">
+							<img class="animated infinite" src="img/tit.png" alt="">
+							<!-- <img class="animated infinite" src="img/kkleft.png" alt="">
+							<img class="animated infinite" src="img/dtright.png" alt=""> -->
+						</div>
+						<div class="kktime-tit-box animated"></div>
+						<div class="kktime-tit-box animated">就业薪资，前途无量</div>
+					</div>
+				</div>		
+			</div>
+			<div class="salary">
+				<div class="job animated">
+					<span class="yuan"></span>
+					<span class="yuan"></span>
+					<p class="jiuye">就业缺口及方向分析</p>
+					<span class="w">全栈工程师：每日缺口5000+</span>
+					<span class="w">后端工程师：每日缺口10000+</span>
+					<span class="w">web前端工程师：每日缺口20000+</span>
+					<p class="all">
+						全栈未来将成爆发之势，就业机会<br />
+						将持续增长。此外全栈工程师学完<br />后不仅可以从事全栈，还可以完美<br />胜任web前端和后端相关工作
+					</p>	
+					<span class="yuan"></span>
+					<span class="yuan"></span>
+				</div>
+
+				<!-- 饼图 -->
+				<div class="circle animated" id="circle"></div>
+
+				<div class="kbox animated">
+					<span>区间</span><span>占比</span>
+					<p class="kcon">
+						<span>3k-4.5k</span><span></span><span>1.2%</span>
+					</p>
+
+					<p class="kcon1">
+						<span>6k-8k</span><span></span><span>3.7%</span>
+					</p>
+
+					<p class="kcon2">
+						<span>8k-10k</span><span></span><span>17.4%</span>
+					</p>
+
+					<p class="kcon3">
+						<span>10k-15k</span><span></span><span>3.1%</span>
+					</p>
+
+					<p class="kcon4">
+						<span>15k-20k</span><span></span><span>20.7%</span>
+					</p>
+
+					<p class="kcon5">
+						<span>20k-30k</span><span></span><span>33.2%</span>
+					</p>
+
+					<p class="kcon6">
+						<span>30k-50k</span><span></span><span>10.1%</span>
+					</p>
+				
+				</div>
+
+				<div class="data animated">
+					<p class="num">平均月薪 ¥17620</p>
+					<p class="money">以上数据来源于职友集644份数据，全栈工程师平均薪资在17k以上，<br />但仍有70%以上用户觉得此数据偏低</p>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 就业喜报 -->
+		<div class="h5-happy">
+			<div class="h5-happy-con">
+				<div class="h5-happy-tit">
+					<div class="h5-htit-img">
+						<img src="img/happyimg.png" alt="">
+					</div>
+					<div class="h5-htit-word">
+						<h4>往期学员就业喜报</h4>
+						<p>说再多，找到适合自己的好工作才是一切的终点站</p>
+					</div>
+				</div>
+				<div class="h5-happy-list animated">
+					<div class="h5-happy-table">
+						<div class="h5-htab-list h5-htab-list1"></div>
+						<div class="h5-htab-list h5-htab-list2"></div>
+						<div class="h5-htab-list h5-htab-list3"></div>
+						<div class="h5-htab-list h5-htab-list4"></div>
+						<div class="h5-htab-list h5-htab-list5"></div>
+					</div>
+					<div class="h5-happy-word">
+						<div class="h5-hword-tit h5-hword-li">
+							<ul>
+								<li>姓名</li>
+								<li>学历</li>
+								<li>就业企业</li>
+								<li>薪资</li>
+								<li>就业省份</li>
+							</ul>
+						</div>
+						<div class="h5-hword-list h5-hword-li">
+							<ul>
+								<li>王*</li>
+								<li>本科</li>
+								<li>体*公司</li>
+								<li>10K</li>
+								<li>河北</li>
+							</ul>
+							<ul >
+								<li>胡*</li>
+								<li>专科</li>
+								<li>标正*公司</li>
+								<li>9K</li>
+								<li>浙江</li>
+							</ul>
+							<ul >
+								<li>贾*</li>
+								<li>专科</li>
+								<li>力*公司</li>
+								<li>11K</li>
+								<li>北京</li>
+							</ul>
+							<ul>
+								<li>王*</li>
+								<li>本科</li>
+								<li>体*公司</li>
+								<li>10K</li>
+								<li>河北</li>
+							</ul>
+							<ul >
+								<li>胡*</li>
+								<li>专科</li>
+								<li>标正*公司</li>
+								<li>9K</li>
+								<li>浙江</li>
+							</ul>
+							<ul >
+								<li>贾*</li>
+								<li>专科</li>
+								<li>力*公司</li>
+								<li>11K</li>
+								<li>北京</li>
+							</ul>
+							<ul>
+								<li>王*</li>
+								<li>本科</li>
+								<li>体*公司</li>
+								<li>10K</li>
+								<li>河北</li>
+							</ul>
+							<ul >
+								<li>胡*</li>
+								<li>专科</li>
+								<li>标正*公司</li>
+								<li>9K</li>
+								<li>浙江</li>
+							</ul>
+							<ul >
+								<li>贾*</li>
+								<li>专科</li>
+								<li>力*公司</li>
+								<li>11K</li>
+								<li>北京</li>
+							</ul>
+							<ul>
+								<li>王*</li>
+								<li>本科</li>
+								<li>体*公司</li>
+								<li>10K</li>
+								<li>河北</li>
+							</ul>
+							<ul >
+								<li>胡*</li>
+								<li>专科</li>
+								<li>标正*公司</li>
+								<li>9K</li>
+								<li>浙江</li>
+							</ul>
+							<ul >
+								<li>贾*</li>
+								<li>专科</li>
+								<li>力*公司</li>
+								<li>11K</li>
+								<li>北京</li>
+							</ul>
+							<ul>
+								<li>王*</li>
+								<li>本科</li>
+								<li>体*公司</li>
+								<li>10K</li>
+								<li>河北</li>
+							</ul>
+							<ul >
+								<li>胡*</li>
+								<li>专科</li>
+								<li>标正*公司</li>
+								<li>9K</li>
+								<li>浙江</li>
+							</ul>
+							<ul >
+								<li>贾*</li>
+								<li>专科</li>
+								<li>力*公司</li>
+								<li>11K</li>
+								<li>北京</li>
+							</ul>
+							<ul>
+								<li>王*</li>
+								<li>本科</li>
+								<li>体*公司</li>
+								<li>10K</li>
+								<li>河北</li>
+							</ul>
+							<ul >
+								<li>胡*</li>
+								<li>专科</li>
+								<li>标正*公司</li>
+								<li>9K</li>
+								<li>浙江</li>
+							</ul>
+							<ul >
+								<li>贾*</li>
+								<li>专科</li>
+								<li>力*公司</li>
+								<li>11K</li>
+								<li>北京</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 为什么选择惠达 -->
+		<div class="android-con">
+			<div class="H5-tit">
+				<img src="img/h5-xz-qiu.png" alt="">
+				选择惠达教育好不好？
+			</div>
+			<div class="android-list-bg animated zq infinite"></div>
+			<div class="android-list-bg1 animated"></div>
+			<div class="android-list">
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						真正做到将前后端融合
+					</div>
+					<div class="android-list-div">
+						课程融合了前端课程和后端课程的几乎全部精华内容，每个阶段穿插的项目都融合了前后端的技术，真正将两者结合实施教学。
+					</div>
+				</div>
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						聘请一线大牛技术分享
+					</div>
+					<div class="android-list-div">						
+						除了名师正常授课以外，全栈学科额外聘请了支付宝、百度、新浪等大牛为你带来技术分享。带你走近一线。
+					</div>
+				</div>
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						 真正以项目为驱动
+					</div>
+					<div class="android-list-div">
+						课程融合了前端课程和后端课程的几乎全部精华内容，每个阶段穿插的项目都融合了前后端的技术，真正将两者结合实施教学。
+					</div>
+				</div>
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						   融合时下流行技术
+					</div>
+					<div class="android-list-div">						
+							课程融合了前端课程和后端课程的几乎全部精华内容，每个阶段穿插的项目都融合了前后端的技术，真正将两者结合实施教学。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+		<!-- 全能人才 -->
+	<div class="qnrc">
+		<div class="qnrc-bg-icon">
+			<img src="img/jyxz-bg3.png" alt="">
+			<!-- <img src="img/qnrc-bg.png" alt=""> -->
+		</div>
+		<div class="qnrc-con">
+			<div class="qnrc-con-tit">
+				<img src="img/rec-word.png" alt="">
+				<img src="img/rec-word1.png" alt="">
+			</div>
+			<div class="qnrc-con-list">
+				<div class="qnrc-list-con">
+					<p>01 Web前端基本功</p>
+					<p>HTML</p>
+					<p>CSS</p>
+					<p>京东商城</p>
+				</div>
+				<div class="qnrc-list-con">
+					<p>02 Web核心编程</p>
+					<p>搭建环境、PHP基础</p>
+					<p>Mysql数据库</p>
+					<p>核心编程、Smarty</p>
+					<p>MVC设计模式</p>
+					<p>博客项目</p>
+				</div>
+				<div class="qnrc-list-con">
+					<p>03 前端高级程序设计</p>
+					<p>JavaScript基础</p>
+					<p>JavaScript核心</p>
+					<p>JavaScript高级</p>
+					<p>jQuery、Ajax</p>
+					<p>VueJS实战项目</p>
+				</div>
+				<div class="qnrc-list-con">
+					<p>04 大型网站架构</p>
+					<p>SVN/Git、Linux</p>
+					<p>Nginx与服务器集群</p>
+					<p>Memcache</p>
+					<p>Redis</p>
+					<p>MongoDB</p>
+				</div>
+			</div>
+			<div class="qnrc-con-list list2">
+				<div class="qnrc-list-con"></div>
+				<div class="qnrc-list-con">
+					<p>05 移动端APP开发</p>
+					<p>HTML5、CSS3</p>
+					<p>Canvas</p>
+					<p>移动web开发</p>
+					<p>电商全端项目</p>
+				</div>
+				<div class="qnrc-list-con">
+					<p>06 NodeJS全栈开发</p>
+					<p>前端模块化</p>
+					<p>NodeJS</p>
+					<p>Express</p>
+					<p>AngularJS</p>
+					<p>ReactJS</p>
+				</div>
+				<div class="qnrc-list-con"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 师资团队 -->
+	<div class="teach-wrap">
+		<div class="teach">
+			<div class="teach-logo">
+				<div class="kktime-tit">
+					<div class="kktime-tit-box animated bounceInLeft">
+						<img class="animated infinite" src="img/tit.png" alt="">
+						<!-- <img class="animated infinite" src="img/kkleft.png" alt="">
+						<img class="animated infinite" src="img/dtright.png" alt=""> -->
+					</div>
+					<div class="kktime-tit-box animated bounceInRight"></div>
+					<div class="kktime-tit-box animated fadeInDown">师资团队 强强联合</div>
+				</div>
+			</div>
+			<div class="teach-new">
+				<img src="img/teach-img1.png" class="wow bounceInDown">
+				<span class="teach-name wow bounceInDown" data-wow-iteration="5" data-wow-duration="0.15s">申航</span>
+				<p class="teach-text   animated bounceInUp">华为科技-高级软件工程师，千禧科技-项目经理，优酷科技-项目经理，惠威航达科技股份有限公司-项目总监惠达教育-学术总监
+				</p>
+			</div>
+			<div class="teach-new ">
+				<img src="img/teach-img2.png" class="wow bounceInDown">
+				<span class="teach-name wow bounceInDown" data-wow-iteration="5" data-wow-duration="0.15s">李鹏</span>
+				<p class="teach-text   animated bounceInUp">秦皇岛晨砻科技-架构师，苏宁电器-JavaEE开发工程师，秦皇岛惠威航达科技-架构师，
+				惠达教育- JavaEE精英讲师，近十年互联网软件开发经验
+				</p>
+			</div>
+			<div class="teach-new right">
+				<img src="img/teach-img3.png" class=" wow bounceInDown">
+				<span class="teach-name wow bounceInDown" data-wow-iteration="5" data-wow-duration="0.15s">姜雨</span>
+				<p class="teach-text   animated bounceInUp">北京嗨学网教育科技有限公司-Android开发工程师，兰州力扬网络科技有限公-Android开发工程师，	惠威航达有限公司-Android开发高级工程师，惠达教育-Android高级讲师
+				</p>
+			</div>
+
+			<a class="teach-kan animated fadeInLeftBig">查看更多</a>
+		</div>
+	</div>
+
+	<!-- 报名表单 -->
+	<div class="from">
+		<div class="from-con animated">
+			<div class="from-tit">
+				<p>填写预报名</p>
+				<p>您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！</p>
+			</div>
+			<form action="">
+				<div class="from-list">
+					<div class="from-list-con">
+						<i class="iconfont">&#xe65d;</i>
+						<div class="from-input">
+							<input id='name' type="text" required="required"> <span>*</span> 真实姓名
+						</div>
+					</div>
+
+					<div class="from-list-con">
+						<i class="iconfont">&#xe606;</i>
+						<div class="from-input">
+							<input id="phone" type="text" required="required"> <span>*</span> 联系手机
+						</div>						
+					</div>
+
+					<div class="from-list-con">
+						<i class="iconfont">&#xe63b;</i>
+						<div class="from-input">
+							<input id='qq' type="text" required="required"> <span>*</span> QQ号码
+						</div>
+					</div>
+
+					<div class="from-list-con">
+						<i class="iconfont">&#xe68f;</i>
+						<div class="from-input">
+							<input id='xk' type="text" required="required"> <span>*</span> 学科报名
+						</div>
+					</div>
+				</div>
+				<div class="from-btn">
+					<input id="btn" type="submit" value="">
+					<p class="from-bth-msg animated">填一填</p>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+  	<iframe src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no"></iframe>
+  	
+	<script src="js/wow.min.js"></script>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		new WOW().init();
+	};
+
+	$(".from-input input").click(function(){
+		top.location.href="../bmlc/#bm"
+	}) 
+
+</script>
+<script>
+window.onload=function(){
+	// 基于准备好的dom，初始化echarts实例
+	var myChart = echarts.init(document.getElementById('circle'));
+
+	// 指定图表的配置项和数据
+	option = {
+	    title : {
+	        text: '',
+	        subtext: '',
+	        x:'center'
+	    },
+	    tooltip : {
+	        trigger: 'item',
+	        formatter: "{a} <br/>{b} : {c} ({d}%)"
+	    },
+	    // legend: {
+	    //     orient: 'vertical',
+	    //     left: 'right',
+	    //     data: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+	    // },
+	    series : [
+	        {
+	            name: '访问来源',
+	            type: 'pie',
+	            radius : '55%',
+	            center: ['50%', '50%'],
+	            data:[
+	                {value:360, name:'30k-50k'},
+	                {value:100, name:'3k-4.5k'},
+	                {value:200, name:'6k-8k'},
+	                {value:400, name:'8k-10k'},
+	                {value:480, name:'10k-15k'},
+	                {value:620, name:'15k-20k'},
+	                {value:1000, name:'20k-30k'},
+	   
+	            ],
+	            itemStyle: {
+	                emphasis: {
+	                    shadowBlur: 10,
+	                    shadowOffsetX: 0,
+	                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+	                }
+	            }
+	        }
+	    ]
+	};
+
+	// 使用刚指定的配置项和数据显示图表。
+	myChart.setOption(option);
+}
+	
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body,div,p,ul,li,h3,h4{
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-family:"微软雅黑";
+}
+
+.footer-wrap{
+	width:100%;
+	background-color:#2c3e50;
+	overflow:hidden;
+}
+.footer{
+	width:1140px;
+	margin:0 auto;
+	overflow:hidden;
+	padding-top:62px;
+	padding-bottom:132px;
+}
+.left,.center,.right{
+	float:left;
+}
+.left{
+	overflow:hidden;
+	width:330px;
+}
+.left div{
+	float:left;
+}
+.job,.brand{
+	margin-right:26px;
+	width:97px;
+}
+.course{
+	width:80px;
+}
+h3{
+	font-size:20px;
+	font-weight: none !important;
+}
+ul{
+	margin-top:24px;
+	padding-right:10px;
+	border-right:1px solid #575752;
+}
+
+.course ul{
+	padding-right:0;
+	border:0;
+}
+ul li{
+	list-style:none;
+	line-height:26px;
+}
+li a{
+	text-decoration:none;
+	color:#fff;
+	font-size:14px;
+	color:#d6d6d6;
+}
+.center{
+	width:130px;
+	margin-left:120px;
+	margin-bottom:90px;
+}
+.center img{
+	display:block;
+	margin:0 auto;
+	margin-bottom:26px;
+}
+.center p{
+	font-size:14px;
+	color:#dcdada;
+	text-align:center;
+	line-height:22px;
+}
+.right{
+	margin-top: 20px;
+	width:500px;
+	float:right;
+	display: flex;
+	position: relative;
+}
+.right p{position: absolute;top: -30px;left: 20px;font-size: 14px;}
+.right h4{
+	font-size:20px;
+
+}
+.right div{
+   flex: 1;
+}
+.right div span{
+	width:100%;
+}
+.right div a.pic{
+	display:block;
+	width:60%;
+	margin:0 auto;
+	height:66px;
+	text-decoration:none;
+	color:#fff;
+}
+.pic>img{width: 100%;}
+a{
+	display:block;
+	text-decoration:none;
+	color:#fff
+}
+.right div a span{
+	display:block;
+	font-size:11px;
+	margin-top:5px;
+	margin-bottom: 15px;
+	text-align:center;
+}

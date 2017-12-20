@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Android学科介绍</title>
+	<link rel="stylesheet" href="css/android.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<!-- <link rel="stylesheet" href="css/index_style.css"> -->
+	<script type="text/javascript" src='js/jquery-3.2.0.min.js'></script>
+	<script type="text/javascript" src='js/android.js'></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<style type="text/css">
+		@font-face {
+		  font-family: 'iconfont';
+		  src: url('fonts/iconfont.eot');
+		  src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+		  url('fonts/iconfont.woff') format('woff'),
+		  url('fonts/iconfont.ttf') format('truetype'),
+		  url('fonts/iconfont.svg#iconfont') format('svg');
+		}
+		.iconfont{
+		  font-family:"iconfont" !important;
+		  font-size:60px;font-style:normal;
+		  -webkit-font-smoothing: antialiased;
+		  -webkit-text-stroke-width: 0.2px;
+		  -moz-osx-font-smoothing: grayscale;
+		  /*color:#A7D82E;*/
+		  color: #379956;
+		  margin-right:75px;
+		}
+	</style>
+		 <script type="text/javascript" src='../public/api.js'></script>
+	    <script type="text/javascript">
+	    $(document).ready(function() {
+	      $.post(metapi,function(data){
+	        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+	        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+	      })      
+	    })
+	  </script>
+</head>
+<body>
+	
+	<!-- 导航条 -->
+	<!-- <iframe src="html/nav.html" style="position: relative;" frameborder="0" width=100% height="90" scrolling="no"></iframe> -->
+
+	<div class="headerWrap">
+      <div class="header">
+      	<a href="../">
+        	<img src="img/huida-ico.png" alt="">
+        </a>
+        <ul class="header-nav">
+          <li><a href="../">首页</a></li>
+          <li class="header-active"><a href="#">学科介绍</a></li>
+          <li><a href="../Androiddg/">课程大纲</a></li>
+          <li><a href="#">就业薪资</a></li>
+        </ul>
+      </div>
+    </div>
+
+	  <script type="text/javascript">
+	    $('.header-nav li').click(function() {
+	      $(this).siblings().removeClass('header-active');
+	      $(this).addClass('header-active');
+	    })
+	  </script>
+	<!-- banner -->
+	<div class="banner">
+		<div class="ban-img">
+			<!-- 光效 -->
+			<!-- <img class="ban-img-light" src="img/light.png" alt=""> -->
+
+			<!-- 球 -->
+			<img class="ban-img-zq animated" src="img/middle-squ.png" alt="">
+			<img class="ban-img-xq animated" src="img/litt-squ.png" alt="">
+			<img class="ban-img-dq animated" src="img/big-squ.png" alt="">
+			<canvas class="ban-img-can" id="canvas"></canvas> 
+		</div>
+		<div class="ban-word">
+			<img class="ban-word-tit animated zoomIn" src="img/ban-tit.png" alt="">
+			<img class="ban-word-qx animated bounceIn" src="img/qxin.png" alt="">
+			<div class="ban-word-sm animated bounceInLeft"></div>
+			<div class="ban-word-sm1 animated bounceInRight"></div>
+			<div class="ban-word-sm2 animated fadeIn"><span class="animated">开源架构级混编型Android开发技术</span></div>
+			<div class="ban-btn animated fadeInUp"><span class="animated ban-btn-word">抢占名额</span></div>
+		</div>
+	</div>
+
+	<!-- 开课时间 -->
+	<div class="kktime">
+		<div class="kktime-bg-icon">
+			<img class="animated flipInX" style="animation-delay:1s" src="img/laturn.png" alt="">
+			<img src="img/light2.png" alt="">
+			<img src="img/fire1.png" alt="">
+		</div>
+		<div class="kktime-con">
+			<div class="kktime-tit">
+				<div class="kktime-tit-box animated bounceInLeft">
+					<img class="animated infinite" src="img/kkleft.png" alt="">
+					<img class="animated infinite" src="img/dtright.png" alt="">
+				</div>
+				<div class="kktime-tit-box animated bounceInRight"></div>
+				<div class="kktime-tit-box animated fadeInDown">开课时间</div>
+			</div>
+			<div class="kktime-list">
+				<div class="kktime-list-left">
+					<ul>
+						<li class="animated">Android+物联网基础班2017-06-06 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+						<li class="animated">Android+物联网基础班2017-06-06 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+						<li class="animated">Android+物联网基础班2017-06-06 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+					</ul>
+				</div>
+				<div class="kktime-list-right">
+					<ul>
+						<li class="animated ">Android+物联网基础班2017-06-06 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+						<li class="animated ">Android+物联网基础班2017-06-06 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+						<li class="animated ">Android+物联网基础班2017-06-06 <img src="img/fire.png" alt=""> <span>爆满</span> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- android -->
+	<div class="android">
+		<div class="android-bg-icon">
+			<img src="img/fire2.png" alt="">
+			<img class="im2" src="img/wt.png" alt="">
+		</div>
+		<div class="android-con">
+			<div class="android-tit">
+				<div class="android-tit-box animated">
+					<img class="animated infinite" src="img/kkleft.png" alt="">
+					<img class="animated infinite" src="img/dtright.png" alt="">
+				</div>
+				<div class="android-tit-box animated"></div>
+				<div class="android-tit-box animated">独特优势—Android—霸主之位</div>
+			</div>
+			<div class="android-list-bg animated zq infinite"></div>
+			<div class="android-list-bg1 animated"></div>
+			<div class="android-list">
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						<span></span>强大而完善的开源生态系统
+					</div>
+					<div class="android-list-div">
+						开源的平台允许任何移动终端厂商加入到Android联盟中来，开源性对于Android的发展而言，有利于积累人气，这里的人气包括消费者和厂商，而对于消费者来讲，最大的受益正是丰富的软件资源。
+					</div>
+				</div>
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						<span></span>丰富的硬件及兼容性
+					</div>
+					<div class="android-list-div">
+						由于Android的开放性，众多的厂商会推出千奇百怪，功能特色各具的多种产品。功能上的差异和特色，却不会影响到数据同步、甚至软件的兼容。
+					</div>
+				</div>
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						<span></span>强大而完善的开源生态系统
+					</div>
+					<div class="android-list-div">
+						Android平台提供给第三方开发商一个十分宽泛、自由的环境，不会受到各种条条框框的阻扰，可想而知，会有多少新颖别致的软件会诞生。
+					</div>
+				</div>
+				<div class="android-list-con">
+					<div class="android-list-tit">
+						<span></span>强大而完善的开源生态系统
+					</div>
+					<div class="android-list-div">
+						在互联网的Google已经走过10年度历史，从搜索巨人到全面的互联网渗透，Google服务如地图、邮件、搜索等已经成为连接用户和互联网的重要纽带，而Android平台手机将无缝结合这些优秀的Google服务。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 后半部分 -->
+	<!-- learn andiro  -->
+     <div style="height:130px;width:100%;background:#03004c;position: relative;z-index: 10;"></div>
+      <div class="learn">
+        <div class="learn-con">
+         <!-- learn 标题  -->
+         <div class="learnTitle"  data-scroll-reveal="move 50px enter right over 1s no reset">
+           <p class="animated fadeInRight"></p>
+           <h4 class="animated fadeInLeft">
+             <span class="wrod animated zoomInUp">学Android好不好？</span>
+           </h4>
+           <img src="./img/kkright.png" class="lright animated infinite" alt="">
+           <img src="./img/dtleft.png" class="lleft animated infinite" alt="">
+         </div>
+         <!-- learn contant  first-->
+          <div class="learnContain" data-scroll-reveal="move 50px enter right over 1s no reset">
+             <!-- contain left -->
+            <div class="lcleft animated rollIn">
+              <img src="./img/hy1.png" alt="" >
+              <p>行业发展</p>
+            </div>
+            <!-- contain right -->
+            <div class="lcright animated bounceInRight">
+              <span class="lcsj"></span>
+              <div class="lcrCon">
+                <p>2015 年全球智能手机市场统计数据显示：</p>
+                <p>Android 手机份额升至<span>84.7%</span>  。Android 在国内智能手机市场确立<span>统治地位</span>  的同时，被<span> 广泛的应用于</span> 可穿戴设备及智能家居等各大领域。</p>
+                <p class="report">报告显示</p>
+                <p>截至2015年12 月，中国网民规模达<span>6.88亿</span>，互联网普及率为<span>50.3%</span>；手机网民规模达<span>6.2亿</span>，占比提升至<span>90.1%</span>，无线网络覆盖明显提升，网民Wi-Fi 使用率达到<span>91.8%</span>。</p>
+                <p>相较2014 年底提升<span>2.4</span>个百分点。现如今，半数中国人已经接入互联网，网民规模增速提升，同时网民个人上网设备进一步向手机端集中。</p>
+              </div>
+            </div>
+          </div>
+          <!-- learn contant  second-->
+          <div class="learnContain" data-scroll-reveal="move 50px enter right over 1s no reset">
+             <!-- contain left -->
+            <div class="lcleft lcimg2 animated rollIn">
+              <img src="./img/hy2.png" alt="" >
+              <p>行业发展</p>
+            </div>
+            <!-- contain right -->
+            <div class="lcright lcright2 animated bounceInRight">
+              <span class="lcsj"></span>
+              <div class="lcrCon lcrCon2">
+                <p><span>Android每日招聘数量（部分城市）</span></p>
+                <img src="./img/table.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- learn contant  third-->
+          <div class="learnContain" style="position: relative;z-index: 10;" data-scroll-reveal="move 50px enter right over 1s no reset">
+             <!-- contain left -->
+            <div class="lcleft lcimg3 animated rollIn">
+              <img src="./img/hy3.png" alt="" >
+              <p>行业发展</p>
+            </div>
+            <!-- contain right -->
+            <div class="lcright lcright3 animated bounceInRight">
+              <span class="lcsj"></span>
+              <div class="lcrCon lcrCon3">
+                <img src="./img/chart.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="imgs">
+          <img src="./img/line2.png" alt="" class="leftimg">
+          <img src="./img/curline2.png" alt="" class="leftimg leftimg1">
+          <img src="./img/curline1.png" alt="" class="leftimg leftimg2">
+          <img src="./img/light1.png" alt="" class="rightimg">
+          <img src="./img/curline.png" alt="" class="rightimg rightimg1">
+          <img src="./img/line1.png" alt="" class="rightimg rightimg2">
+          <img src="./img/xingqiu.png" alt="" class="rightimg rightimg3">
+          <img src="./img/wt3.png" alt="" class="rightimg rightimg4">
+        </div>
+      </div>
+
+      <!-- choice -->
+      <div class="learn choice">
+        <div class="learn-con">
+           <!-- learn 标题  -->
+           <div class="learnTitle"  data-scroll-reveal="move 50px enter right over 1s no reset">
+             <p class="animated fadeInRight"></p>
+             <h4 class="animated fadeInLeft">
+               <span class="wrod animated zoomInUp">为何选择惠达教育</span>
+             </h4>
+             <img src="./img/kkright.png" class="lright animated infinite" alt="">
+             <img src="./img/dtleft.png" class="lleft animated infinite" alt="">
+           </div>
+           <!-- 因材施教 -->
+           <img src="./img/ban.png" alt="" class="choiceban">
+           <h4 class="choiceTitle animated">专属<span>特级课程</span>，打造Android顶级大咖</h4>
+           <div class="choiceLine">
+             <p><span></span></p>
+             <p><span></span></p>
+             <p><span></span></p>
+             <p><span></span></p>
+           </div>
+           <div class="choice-list">
+            	<div class="choice-list-con">
+            		<h4>就业指导很贴心</h4>
+            		<img src="img/jian.png" alt="">
+            		<div class="choice-list-word">
+            			就业易，就好业难。就业指导老师从简历到面试技巧，从市场需求到企业发展，全面指导，致力于让你就好业。
+            		</div>
+            	</div>
+            	<div class="choice-list-con">
+            		<h4>技术更新也安心</h4>
+            		<div class="choice-list-word">
+            			无论是技术更新升级，还是教学课程的迭代更新，都会在第一时间提供给你，保障你永无后顾之忧。
+            		</div>
+            		<img src="img/jian1.png" alt="">
+            	</div>
+            	<div class="choice-list-con">
+            		<h4>有了困难不闹心</h4>
+            		<img src="img/jian2.png" alt="">  
+            		<div class="choice-list-word">
+            			班级群，技术群随时帮你解决工作中的困难，更有技术老师、大牛邮件支援，我们时刻都是你坚实的后盾。
+            		</div>          		
+            	</div>
+            	<div class="choice-list-con">
+            		<h4>就算毕业也开心</h4>  
+            		<div class="choice-list-word">
+            			毕业后想继续充电，可通过黑马云课堂进一步学习，也可以通过公众号，微博等随时找到我们，为你免费提供终身学习机会。
+            		</div>     
+            		<img src="img/jian3.png" alt="">     		
+            	</div>
+           </div>
+        </div>
+      </div>
+		
+	<!-- 报名表单 -->
+	<div class="from">
+		<div class="from-con animated">
+			<div class="from-tit">
+				<p>填写预报名</p>
+				<p>您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！</p>
+			</div>
+			<form action="">
+				<div class="from-list">
+					<div class="from-list-con">
+						<i class="iconfont">&#xe65d;</i>
+						<div class="from-input">
+							<input id='name' type="text" required="required"> <span>*</span> 真实姓名
+						</div>
+					</div>
+					<div class="from-list-con">
+						<i class="iconfont">&#xe606;</i>
+						<div class="from-input">
+							<input id="phone" type="text" required="required"> <span>*</span> 联系手机
+						</div>						
+					</div>
+					<div class="from-list-con">
+						<i class="iconfont">&#xe63b;</i>
+						<div class="from-input">
+							<input id='qq' type="text" required="required"> <span>*</span> QQ号码
+						</div>
+					</div>
+					<div class="from-list-con">
+						<i class="iconfont">&#xe68f;</i>
+						<div class="from-input">
+							<input id='xk' type="text" required="required"> <span>*</span> 学科报名
+						</div>
+					</div>
+				</div>
+				<div class="from-btn">
+					<input id="btn" type="submit" value="">
+					<p class="from-bth-msg animated">填一填</p>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<iframe class="new-footer" src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no">
+</iframe>
+
+
+
+  <script src="./js/scrollReveal.min.js"></script>
+  <script type="text/javascript">
+      (function($) {
+        'use strict';
+        window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
+      })();
+
+    $(".from-input input").click(function(){
+		top.location.href="../bmlc/#bm"
+	}) 
+   </script>
+</body>
+</html>

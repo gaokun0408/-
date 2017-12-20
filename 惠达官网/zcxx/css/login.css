@@ -1,0 +1,38 @@
+body{background:url(../images/bgimg5.png) no-repeat center 0;background-size: cover;font-family: '微软雅黑';color: #787878;}
+*{margin:0;padding:0;}
+a{text-decoration: none;}
+li{list-style: none;}
+input{outline: none;}
+span,p{cursor:default;}
+
+
+.login-box{width:538px;height: 710px;margin-top:1%;border:2px solid #fff;background: rgba(215,251,255,0.3);border-radius: 10px;position:relative}
+.zcinfor{font-size: 24px;color:#414643;text-align: center;margin-top: 18px;margin-bottom: 20px;}
+.userbox{width: 370px;height: 38px;margin:0 auto;overflow: hidden;}
+.userbox input{width: 340px;height: 38px;font-size: 16px;text-indent: 12px;color:#8d8c8c;float: right;}
+.star{display:inline-block;font-size: 34px;color:#f4800e;margin-top: 8px;}
+.tip{display: block;width: 340px;height: 22px;font-size:12px;color:#484646;text-align: left;line-height: 22px;margin-left: 112px;}
+
+/* 密码强度 */
+.pswq span{display: inline-block;width:112px;height:20px;background-color:#787878;text-align:center;line-height:19px;color:#fff;font-size: 15px;margin-top:8px;margin-bottom: 8px;}
+.pswq span:first-child{margin-left: 28px;}
+.pswq span:nth-child(2){margin:0 1px;}
+.pswq .zzbg{opacity:0.5;}
+
+.yzbox{width: 340px;height: 34px;margin-top: 10px;margin-left: 112px;margin-bottom: 16px;}
+.yzi{width:174px;height:36px;margin-right:30px;text-indent:10px;background-color: rgba(245,242,242,0.6);border-radius:0;border:none;border:1px solid #fff;}
+.yzbox .fs{display:inline-block;width:130px;height:36px;border:1px solid #07913a;border-radius:10px;background-color: rgba(245,242,242,0.6);color:#787878;outline:none;}
+
+/*同意条款*/
+.tybox{width: 536px;height: 34px;border-bottom:1px solid #fff;}
+.agree{width: 340px;height: 20px;margin-left: 112px;margin-bottom: 16px;position:relative;}
+.agree .fx{display:block;position:absolute;left: 0;top: 0;width:18px;height:18px;border:1px solid #a0a0a0;color:#b1b1b1;position: absolute;left:0px;bottom: 0px;}
+.agree .me{display:inline-block;margin-right: 12px;font-size: 16px;color:#fff;line-height: 20px;}
+.agree .lay{font-size: 16px;color:#2e2d2d;line-height: 20px;}
+
+/*完善信息*/
+.more{font-size: 14px;color:#f4800e;text-align: center;margin-top: 18px;margin-bottom: 30px;}
+.line{width: 380px;height: 30px;overflow: hidden;margin:0 auto;margin-bottom: 14px;}
+.line img{display: inline-block;float: left;}
+.line input{width: 340px;height: 30px;float: right;text-indent:14px;}
+.sub-btn{width: 158px;height: 40px;border:none;font-size: 22px;color:#fff;margin-top: 10px;border-radius: 20px;background-color: #009944}

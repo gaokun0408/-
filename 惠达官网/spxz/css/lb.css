@@ -1,0 +1,14 @@
+/*海报  轮播图 区域*/
+html,body,div,p{
+	margin:0;padding:0;
+}
+.banner{width:100%;height:600px;position:relative;}
+.banner-nav{width:200px;height:40px;position:absolute;left:50%;
+	bottom:100px;margin-left:-100px;}
+.banner-nav span{display:block;width:30px;height:30px;float:left;margin-right:20px;
+background-color:#fff;border-radius:50%;cursor:pointer;}
+.banner-nav .currentSpan{background-color:blue;}
+.banner-posi{width:0px;height:0px;position:absolute;left:50%;top:300px;}
+/*.banner-prev{width:70px;height:90px;background-color:#fff;position:absolute;left:-600px;top:-40px;cursor:pointer;text-align:center;line-height:90px;font-size:40px;font-weight:bold;border-radius:6px;opacity:0.3;}
+.banner-next{width:70px;height:90px;background-color:#fff;position:absolute;left:600px;top:-40px;cursor:pointer;text-align:center;line-height:90px;font-size:40px;font-weight:bold;border-radius:6px;opacity:0.3;}*/
+.banner-item{display: block;width:100%;height:600px;position:absolute;left:0;top:0;opacity:0;}

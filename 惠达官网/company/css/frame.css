@@ -1,0 +1,327 @@
+*{ margin: 0; padding: 0; font-family: '微软雅黑'}
+/*11111*/
+.viwe
+{
+  width:364px;
+  height: 327px;
+  border:5px #fff solid;
+  float: left;
+  margin-top: 35px;
+  margin-left: 15px;
+  position:relative;overflow: hidden;
+}
+img{ max-width: 100%;overflow: hidden;}
+.hover{
+  width: 3640px;
+  height: 0px;
+  font-size: 16px;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  overflow: hidden;
+  top: 30px;
+  left: 0;
+  transform:rotate(55deg) ;
+  transition: all  0.6s;
+  z-index: 999;
+}
+.viwe:hover .hover{
+  margin-top: 14px;
+   height: 200px;
+   width: 370px;
+   transform:rotate(0deg);
+   letter-spacing: 3px;
+    padding-top: 20px;
+ }
+.viwe:before{
+      content: "";
+      position: absolute;
+      top:-465px;
+      right:0;
+      width: 625px;
+      height:501px;
+      background:rgba(254,94,94,0.4);
+      transform:rotate(47deg) translateX(83px);
+      transform-origin: 100% 0%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe:hover:before{top:0;}
+.viwe:after{
+      content: "";
+      position: absolute;
+      bottom:-490px;
+      left:0;
+      width: 400px;
+      height:651px;
+      background:rgba(254,94,94,0.4);
+      transform:rotate(46deg) translateX(-75px);
+      transform-origin: 0% 100%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe:hover:after{ bottom: 0;}
+.view .hover p{
+  width: 300px;
+  height: 400px;
+  font-size: 20px !important;
+  color: #fff;
+}
+
+/*22222*/
+.viwe2
+{
+  width:364px;
+  height: 327px;
+  border:5px #fff solid;
+  float: left;
+  margin-top: 35px;
+  margin-left: 15px;
+  position:relative;overflow: hidden;
+}
+img{ max-width: 100%;overflow: hidden;}
+.hover2{
+  width: 3640px;
+  height: 0px;
+  font-size: 16px;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  overflow: hidden;
+  top: 30px;
+  left: 0;
+  transform:rotate(55deg) ;
+  transition: all  0.6s;
+  z-index: 999;
+}
+.viwe2:hover .hover2{
+  margin-top: 14px;
+   height: 240px;
+   width: 370px;
+   transform:rotate(0deg);
+   letter-spacing: 3px;
+    padding-top: 20px;
+ }
+.viwe2:before{
+      content: "";
+      position: absolute;
+      top:-465px;
+      right:0;
+      width: 625px;
+      height:501px;
+      background:rgba(23,100,0,0.4);
+      transform:rotate(47deg) translateX(83px);
+      transform-origin: 100% 0%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe2:hover:before{top:0;}
+.viwe2:after{
+      content: "";
+      position: absolute;
+      bottom:-490px;
+      left:0;
+      width: 400px;
+      height:651px;
+      background:rgba(23,100,0,0.4);
+      transform:rotate(46deg) translateX(-75px);
+      transform-origin: 0% 100%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe2:hover:after{ bottom: 0;}
+.view2 .hover2 p{
+  width: 200px;
+  height: 400px;
+  font-size: 16px;
+  color: #fff;
+}
+/*333333*/
+.viwe3
+{
+  width:364px;
+  height: 327px;
+  border:5px #fff solid;
+  float: left;
+  margin-top: 35px;
+  margin-left: 15px;
+  position:relative;overflow: hidden;
+}
+img{ max-width: 100%;overflow: hidden;}
+.hover3{
+  width: 3640px;
+  height: 0px;
+  font-size: 16px;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  overflow: hidden;
+  top: 30px;
+  left: 0;
+  transform:rotate(55deg) ;
+  transition: all  0.6s;
+  z-index: 999;
+}
+.viwe3:hover .hover3{
+  margin-top: 14px;
+   height: 220px;
+   width: 370px;
+   transform:rotate(0deg);
+   letter-spacing: 3px;
+    padding-top: 20px;
+ }
+.viwe3:before{
+      content: "";
+      position: absolute;
+      top:-465px;
+      right:0;
+      width: 625px;
+      height:501px;
+      background:rgba(243,66,224,0.4);
+      transform:rotate(47deg) translateX(83px);
+      transform-origin: 100% 0%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe3:hover:before{top:0;}
+.viwe3:after{
+      content: "";
+      position: absolute;
+      bottom:-490px;
+      left:0;
+      width: 400px;
+      height:651px;
+      background:rgba(243,66,224,0.4);
+      transform:rotate(46deg) translateX(-75px);
+      transform-origin: 0% 100%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe3:hover:after{ bottom: 0;}
+.view3.hover3 p{
+  width: 300px;
+  height: 400px;
+  font-size: 16px;
+  color: #fff;
+}
+/*4444*/
+.viwe4
+{
+  width:364px;
+  height: 327px;
+  border:5px #fff solid;
+  float: left;
+  margin-top: 15px;
+  margin-left: 200px;
+  position:relative;overflow: hidden;
+}
+img{ max-width: 100%;overflow: hidden;}
+.hover4{
+  width: 3640px;
+  height: 0px;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  overflow: hidden;
+  top: 30px;
+  font-size: 16px;
+  left: 0;
+  transform:rotate(55deg) ;
+  transition: all  0.6s;
+  z-index: 999;
+}
+.viwe4:hover .hover4{
+  margin-top: 14px;
+   height: 200px;
+   width: 370px;
+   transform:rotate(0deg);
+   letter-spacing: 3px;
+    padding-top: 30px;
+ }
+.viwe4:before{
+      content: "";
+      position: absolute;
+      top:-465px;
+      right:0;
+      width: 625px;
+      height:501px;
+      background:rgba(35,131,216,0.4);
+      transform:rotate(47deg) translateX(83px);
+      transform-origin: 100% 0%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe4:hover:before{top:0;}
+.viwe4:after{
+      content: "";
+      position: absolute;
+      bottom:-490px;
+      left:0;
+      width: 400px;
+      height:651px;
+      background:rgba(35,131,216,0.4);
+      transform:rotate(46deg) translateX(-75px);
+      transform-origin: 0% 100%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe4:hover:after{ bottom: 0;}
+.view4.hover4 p{
+  width: 300px;
+  height: 400px;
+  font-size: 16px;
+  color: #fff;
+}
+/*55555*/
+.viwe5
+{
+  width:364px;
+  height: 327px;
+  border:5px #fff solid;
+  float: left;
+  margin-top: 15px;
+  margin-left: 18px;
+  position:relative;overflow: hidden;
+}
+img{ max-width: 100%;overflow: hidden;}
+.hover5{
+  width: 3630px;
+  height: 0px;
+  font-size: 16px;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  overflow: hidden;
+  top: 30px;
+  left: 0;
+  transform:rotate(55deg) ;
+  transition: all  0.6s;
+  z-index: 999;
+}
+.viwe5:hover .hover5{
+  margin-top: 10px;
+   height: 240px;
+   width: 370px;
+   transform:rotate(0deg);
+   letter-spacing: 0px;
+   padding-top: 10px;
+ }
+.viwe5:before{
+      content: "";
+      position: absolute;
+      top:-465px;
+      right:0;
+      width: 625px;
+      height:501px;
+      background:rgba(253,135,40,0.4);
+      transform:rotate(47deg) translateX(83px);
+      transform-origin: 100% 0%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe5:hover:before{top:0;}
+.viwe5:after{
+      content: "";
+      position: absolute;
+      bottom:-490px;
+      left:0;
+      width: 400px;
+      height:651px;
+      background:rgba(253,135,40,0.4);
+      transform:rotate(46deg) translateX(-75px);
+      transform-origin: 0% 100%;/*定转换的位置*/
+      transition: all 200ms ease 0.4s;
+    }
+.viwe5:hover:after{ bottom: 0;}
+.view5 .hover5 p{
+  width: 270px;
+  height: 400px;
+  font-size: 16px;
+  color: #fff;
+}

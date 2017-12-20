@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>H5课程大纲</title>
+    <link rel="stylesheet" href="css/h5-style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/js.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+       <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <div class="headerWrap">
+      <div class="header">
+        <a href="../">
+          <img src="images/hd-logo.png" alt="">
+        </a>
+        
+        <ul class="header-nav">
+          <li><a href="../">首页</a></li>
+          <li><a href="../H5index/">学科介绍</a></li>
+          <li class="header-active"><a href="#">课程大纲</a></li>
+          <li><a href="#">就业薪资</a></li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('.header-nav li').click(function() {
+        $(this).siblings().removeClass('header-active');
+        $(this).addClass('header-active');
+      })
+    </script>
+
+    <!-- banner -->
+    <div class="bannerwrap">
+    <div class="banner">
+      <div class="banner-text">
+        <p class="title1 animated bounceInDown">万物互联极致体验</p>
+        <p class="title2 wow bounceInLeft">H5+</p>
+        <img src="images/banner-text1.png" class="wow bounceInRight bg-yellow">
+      </div>
+      <div class="banner-bottom">
+        <p class="title3 demo3" >高密度授课 全程跟踪辅导 标准化教学</p>
+        <p class="title4 demo2">全方位掌握WBE前端、后端、移动端技能</p>
+        <p class="title5 demo2 animated flipInX"  style=" -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;">前段+后台+移动端  打造全能型Web精英</p>
+      </div>
+      <img src="images/laturn.png" class="laturn animated swing infinite" style=" -webkit-animation-duration: 2s;
+          animation-duration: 2s;">
+       <!-- class="block block-2x block-slate" data-scroll-reveal="enter top over 1s after 0.5s" -->
+      <img src="images/wt.png" class="wt" class="block block-2x block-slate" data-scroll-reveal="enter top over 1s after 0.5s">
+
+      <img src="images/banner-img4.png" class="banner-img4" class="block block-1x block-orange" data-scroll-reveal="enter left">
+      <img src="images/banner-img5.png" class="banner-img5" class="block block-3x block-kiwi" data-scroll-reveal="enter bottom over 1s and move 300px after 0.3s">
+    </div>
+  </div>
+
+    <div>
+    <div class="mainWrap">
+        <div class="main">
+            <div class="designli">
+              <div class="zhongxin">
+                <p class="wow swing p1">H5+全栈工程师</p>
+                <p class="wow swing">课程设计理念</p>
+              </div>
+              <div class="wow bounceInDown designli-in one">
+                <div class="title">
+                  <div class="innertitle">
+                    <span class="yuan"></span>
+                    <span>定位精英程序员</span>
+                  </div>
+
+                </div>
+                <p>一课程的研发集合了前端与移动开发学院和PHP学院精英讲<br />师的团队力量，定位于打造精通前端+后端+移动端的精英<br />型全栈工程师。高标准的培养要求也对来参与培训的学员<br />有一定要求，希望学员能高中以上学历，且有一定的计算<br />机基础。</p>
+              </div>
+
+              <div class="wow bounceInUp designli-in two">
+                <div class="title">
+                  <div class="innertitle r">
+                    <span class="yuan"></span>
+                    <span>前后端融合教学</span>
+                  </div>
+
+                </div>
+                <p>课程融合了前端课程和后端课程的几乎全部精华内容<br />，每个阶段穿插的项目都融合了前后端的技术，真正<br /> 将两者结合实施教学。</p>
+              </div>
+
+              <div class="  designli-in three">
+                <div class="title">
+                  <div class="innertitle">
+                    <span class="yuan"></span>
+                    <span>以项目为驱动</span>
+                  </div>
+
+                </div>
+                <p>课程融合了Web前端和PHP的几乎全部精华内容，整个<br />教学的各个阶段都融合了相应的项目作为穿插，从前<br />端项目到后端项目再到移动项目和全栈项目，让你学<br />  以致用，真正掌握全栈技术。</p>
+
+              </div>
+              <div class=" designli-in four">
+                <div class="title">
+                  <div class="innertitle r">
+                    <span class="yuan"></span>
+                    <span>技术紧跟市场需求</span>
+                  </div>
+                </div>
+                <p>融合了前端（html5、css3、bootstap、javascript<br />、argularjs）,后端（手写mvc框架、laravel、<br />mongodb、linux、redis），移动端（react native<br />、微信开发、微信支付，小程序开发、混合式app开<br />发）等流行技术。另外除了名师正常授课以外，全栈<br />学科额外聘请了支付宝、百度、新浪等大牛为你带来<br />技术分享。带你走近一线。</p>
+
+              </div>
+          </div>
+
+    </div>
+          <!-- 学科项目介绍 -->
+          <div class="projectA">
+            <p class="baseTitle wow bounceInRight">
+              <img src="images/pingxing.png" alt="">
+              <span>JavaEE基础班课程大纲</span>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <!-- 学科项目介绍 -->
+    <!-- 第一阶段 -->
+    <div class="project1Wrap">
+      <div class="project">
+          <div class="wow bounceInUp left">
+            <span class="leftTitle">第一阶段：Web前端基础</span>
+            <div class="projie">
+              <span>课程内容：</span>
+              <p class="hcourse">
+                <span>HTML5基础 </span>
+                <span>CSS3基础</span>
+                <span>阶段项目</span>
+                <span>UI交互设计 </span>
+                <span>圆形设计与制作</span>
+                <span>阶段项目实战</span>
+                <span>CSS高级</span>
+              </p>
+            </div>
+
+            <div class="tese">
+              <span>培养目标：</span>
+              <p>熟练掌握各种HTML标签，能够手动完成各种熟练掌握CSS选<br />择器以及CSS，完全手动实现京东产品详情页的编写，熟练掌<br />握页面的UI设计以及交互设计，理解设计原则，完成产品原形<br />的设计与制作 ,阶段项目实战 等。</p>
+            </div>
+          </div>
+          <div class="wow bounceInDown right">
+              <img src="images/img1.png" alt="">
+          </div>
+      </div>
+    </div>
+
+
+    <!-- 第二阶段 -->
+    <div class="project2Wrap">
+      <div class="project">
+          <div class="wow bounceInLeft left">
+            <span class="leftTitle ltitle">
+              第二阶段：Javascript开发课程</span>
+            <div class="projie">
+              <span>课程内容：</span>
+              <p class="hcourse jcourse">
+                <span>Javascript核心</span>
+                <span>阶段项目实战</span>
+                <span>DOM编程 </span>
+                <span>阶段项目实战</span>
+              </p>
+            </div>
+
+            <div class="tese">
+              <span>培养目标：</span>
+              <p>深入理解Javascript语言原理，熟练掌握Javascript的编程<br />巧，掌握Javascript对象封装技巧，理解面向对象编程理论，<br />使用原生JS代码实现2048游戏的填写，京东登陆，京东注册，<br />淘宝登陆，淘宝注册，京东产品详情页的页面动效以及交互实<br />
+              现等。</p>
+            </div>
+          </div>
+          <div class="wow bounceInRight right">
+              <img src="images/img2.png" alt="">
+          </div>
+      </div>
+    </div>
+
+    <!-- 第三阶段 -->
+    <div class="project1Wrap color">
+      <div class="project">
+        <div class="wow rollIn left">
+          <span class="leftTitle">第三阶段：Web前端高级</span>
+          <div class="projie">
+            <span>课程介绍：</span>
+            <p class="hcourse jcourse">
+              <span>HTML5高级</span>
+              <span>阶段项目实战</span>
+              <span>JQuery</span>
+              <span>项目实战</span>
+            </p>
+          </div>
+
+          <div class="tese">
+            <span>培养目标：</span>
+            <p>熟练掌握HTML5的绘图、音频视频处理、表单新特性等，能够<br />熟练使用HTML5进行Web开发阶段项目实战，"掌握JQuery<br />核心API,深入了解JQuery设计原则，了解多种JQuery插件，<br />能够熟练使用JQuery编程，并完成JQuery的设计及实现" <br />用JQuery重构2048等。 </p>
+          </div>
+        </div>
+        <div class="wow lightSpeedIn right">
+            <img src="images/img3.png" alt="">
+        </div>
+    </div>
+  </div>
+
+  <!-- 第四阶段 -->
+  <div class="project2Wrap">
+    <div class="project">
+        <div class="wow bounceInLeft left">
+          <span class="leftTitle ltitle">第四阶段：服务器交互</span>
+          <div class="projie">
+            <span>课程介绍：</span>
+            <p class="hcourse ajax">
+              <span>SERVER和HTTP协议</span>
+              <span>Ajax</span>
+              <span>项目实战</span>
+            </p>
+          </div>
+          <div class="tese">
+            <span>项目特色</span>
+            <p>了解各种主流服务器以及服务器端技术，能够实现服务器端的<br />部署，透彻理解HTTP协议，掌握服务器端组件原理，能够<br />现服务器端的通信分析，  深入理解Ajax的基本通信原理，掌握<br />基于XML和JSON的数据规则，能够熟练使用Ajax实现与服务<br />器的异步通信，并完成页面的局部提交和刷新   </p>
+          </div>
+        </div>
+        <div class="wow bounceInRight right">
+            <img src="images/img4.png" alt="">
+        </div>
+    </div>
+  </div>
+
+  <!-- 第五阶段 -->
+  <div class="project1Wrap color2">
+    <div class="project">
+        <div class="wow bounceInUp left">
+          <span class="leftTitle">第五阶段：框架技术</span>
+          <div class="projie">
+            <span>课程介绍：</span>
+            <p class="hcourse">
+              <span>Bootstrap</span>
+              <span>阶段项目</span>
+              <span>angular JS</span>
+              <span>阶段项目</span>
+              <span>NodeJS </span>
+              <span>ReactJS</span>
+              <span>其他常用JS框架</span>
+            </p>
+          </div>
+
+          <div class="tese">
+            <span>培养目标：</span>
+            <p>理解Bootstrap的原理，熟练掌握Bootstrap的核心API,能够<br />实现响应式布局以及功能交互。阶段项目实战  。<br />
+            理解angular JS的框架原理，掌握MVC编程模式，能够熟练使<br />
+            用angular JS实现页面的重构。<br />
+            熟练掌握常用JS框架的使用NodeJS</p>
+          </div>
+        </div>
+        <div class="wow swing right">
+            <img src="images/img5.png" alt="">
+        </div>
+    </div>
+  </div>
+
+  <!-- 报名信息 -->
+  <div class="baomingWrap wow bounceInUp">
+    <div class="baoming">
+      <p class="baoTitle wow bounceInDown">
+        填写预报名
+      </p>
+      <p class="baoTip">
+        您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！
+      </p>
+      <ul class="tianWrap">
+          <li class="wow bounceInRight">
+            <img src="images/user.png" alt="">
+            <p>
+              <input type="text" name="" value="">
+              *真实姓名
+            </p>
+          </li>
+
+          <li class="wow bounceInRight">
+            <img src="images/shouji.png" alt="">
+            <p>
+              <input type="text" name="" value="">
+              *联系手机
+            </p>
+          </li>
+
+          <li class="wow bounceInLeft">
+            <img src="images/qq.png" alt="">
+            <p>
+              <input type="text" name="" value="">
+              *QQ号码
+            </p>
+          </li>
+
+          <li class="wow bounceInLeft">
+            <img src="images/baoming.png" alt="">
+            <p>
+              <input type="text" name="" value="">
+              *学科报名
+            </p>
+          </li>
+      </ul>
+      <div class="clear">
+      </div>
+      <button class="baoBtn" type="button" name="button">立即报名</button>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <iframe src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no"></iframe>
+
+  <!-- js -->
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/scrollReveal.min.js?ver=0.2.0-rc.1"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+  <script type="text/javascript" src="js/animatext.min.js"></script>
+
+
+  <script type="text/javascript">
+      $(".wow input").click(function(){
+        top.location.href="../bmlc/#bm"
+      })
+
+      (function($) {
+
+        'use strict';
+
+        window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
+
+      })();
+
+      // 文字插件
+      $('.animateTitle1').animatext({
+        speed: 300,
+        effect: 'flipInY',
+        reverse: false
+      });
+    $(".demo2").animatext({speed: 150,
+        effect: 'flipInX',
+        infinite: true
+    });
+    $(".demo3").animatext({speed: 150,
+        mode: "words",
+        effect: 'swing',
+        infinite: true
+    });
+
+  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+      new WOW().init();
+  };
+    </script>
+  </body>
+
+</html>

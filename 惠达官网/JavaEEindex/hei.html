@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javaEE学科介绍</title>
+	<style>
+		body{margin:0;padding:0;}
+	</style>
+	<link rel="stylesheet" href="css/course.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<script src="js/jquery-1.8.3.min.js"></script>
+	 <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+</head>
+<script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+<body>
+	<!-- 导航条 -->
+	<!-- <iframe src="html/nav.html" frameborder="0" width=100% height="90" scrolling="no"></iframe> -->
+	<div class="headerWrap">
+      <div class="header">
+        <a href="../">
+          <img src="images/hd-logo.png" alt="">
+        </a>
+        
+        <ul class="header-nav">
+          <li><a href="../">首页</a></li>
+          <li class="header-active"><a href="../javaEEindex/">学科介绍</a></li>
+          <li><a href="../javaEEdg/">课程大纲</a></li>
+          <li><a href="#">就业薪资</a></li>
+        </ul>
+      </div>
+    </div>
+     <script type="text/javascript">
+      $('.header-nav li').click(function() {
+        $(this).siblings().removeClass('header-active');
+        $(this).addClass('header-active');
+      })
+    </script>
+
+	<!-- 轮播图 -->
+	<div class="tc-png">
+		<div class="zz">
+		  <div class="zz-cen">
+		    <p class="javeEE-p wow bounceInRight bg-blue">JavaEE</p>
+		    <p class="six-month wow bounceInDown bg-green">6个月高效学习，<span class="gao ">高薪就业</span>，不再愁</p>
+		    <p class="depth-stu wow lightSpeedIn bg-purple">深入企业 更适合你</p>
+		    <a class="zixun-btn wow pulse bg-red" data-wow-iteration="5" data-wow-duration="0.15s" href="#">我要咨询</a>
+		  </div>
+		</div>
+	</div>
+	<!-- Java行业潜力 -->
+<div class="java-indu">
+	<div class="indu-cen">
+			<p class="java-p1">Java行业潜力无限 技术资本永不过时</p>
+			<p class="java-p2">Java技术风起云涌，冲击整个软件生态系统，互联网时代必学语言</p>
+			<div class="three-img">
+				<div class="left-box1">
+					<div class="left-img wow bounceInLeft bg-green">
+						<img src="images/indu-img1.png" alt="">
+					</div>
+					<div class="left-info wow bounceInLeft bg-green">
+						<img src="images/juhao.jpg" alt="">
+						<span>2000年</span>
+						<p>全球有超过400个Java开发团队
+							 在JavaOne大会上，</br>
+							 Steve  Jobs与Scottn McNealy一起宣布苹果公司会全力支持java技术
+						 </p>
+					</div>
+				</div>
+				<div class="left-box1">
+					<div class="mid-img wow flipInX bg-purple">
+						<img src="images/indu-img2.png" alt="">
+					</div>
+					<div class="left-info wow flipInX bg-purple">
+						<img src="images/juhao.jpg" alt="">
+						<span>2002年</span>
+						<p>J2EE SDK下载次数达2百万</br>
+							 78%的决策者认为，J2EE技术是最有影响力的网络构建开发平台</br>
+						 </p>
+					</div>
+				</div>
+				<div class="left-box1">
+					<div class="right-img wow bounceInRight bg-yellow">
+						<img src="images/indu-img3.png" alt="">
+					</div>
+					<div class="left-info wow bounceInRight bg-yellow">
+						<img src="images/juhao.jpg" alt="">
+						<span>2003年</span>
+						<p>大约有5.5亿个桌面系统应用了Java技术</br>
+							 有75%的专业开发者使用Java编程语言，并将其作为主要的开发语言</br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<!-- 做潮流前沿的Java -->
+<div class="tc-trend">
+	<div class="trend-cen">
+		<p class="trend-p">做潮流前沿的Java
+			<span class="trend-span">实力派</span>
+		</p>
+		<div class="trend-three">
+			<div class="trend-left">
+				<div class="left-img1 wow bounceInUp bg-red">
+					<img src="images/ele.png" alt="">
+				</div>
+				<p>
+					饿了么回做潮流前沿的实力派回做潮流前沿的实力派
+				</p>
+			</div>
+
+			<div class="trend-mid">
+				<div class="left-img2 wow bounceInDown bg-green">
+					<img src="images/weipin.png" alt="">
+				</div>
+				<p>
+					唯品会回做潮流前沿的实力派回做潮流前沿的实力派
+				</p>
+			</div>
+
+			<div class="trend-right">
+				<div class="left-img3 wow bounceInUp bg-red">
+					<img src="images/gaode.png" alt="">
+				</div>
+				<p>
+					高德地图回做潮流前沿的实力派回做潮流前沿的实力派
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Java大势所趋 -->
+<div class="javabox">
+	<div class="big">
+		<img src="images/text.png" class="text  wow flipInX" alt="">
+		<h3>不做5K菜鸟 选择惠达做高薪大牛</h3>
+		<a href="#" class="consult">我要咨询</a>
+
+	<div class="salary-box">
+		<div class="salary">
+			<div class="circle wow rollIn bg-yellow" data-wow-delay="0.3s">
+				<span class="average">平均年薪</span>
+				<span class="num">60000</span>
+				<span class="primary">初级工程师</span>
+			</div>
+
+			<div class="line wow bounceInUp bg-red"></div>
+		</div>
+
+		<div class="salary">
+			<div class="circle circle1 wow rollIn bg-yellow" data-wow-delay="0.4s">
+				<span class="average">平均年薪</span>
+				<span class="num">130,000</span>
+				<span class="primary">中级工程师</span>
+			</div>
+
+			<div class="line line1 wow bounceInUp bg-red"></div>
+		</div>
+
+		<div class="salary">
+			<div class="circle circle2 wow rollIn bg-yellow" data-wow-delay="0.5s">
+				<span class="average">平均年薪</span>
+				<span class="num">260,000</span>
+				<span class="primary">构架师</span>
+			</div>
+
+			<div class="line line2 wow bounceInUp bg-red"></div>
+		</div>
+
+		<div class="salary">
+			<div class="circle circle3  wow rollIn bg-yellow" data-wow-delay="0.6s">
+				<span class="average">平均年薪</span>
+				<span class="num">350,000</span>
+				<span class="primary">项目经理</span>
+			</div>
+
+			<div class="line line3 wow bounceInUp bg-red"></div>
+		</div>
+
+		<div class="salary">
+			<div class="circle circle4  wow rollIn bg-yellow" data-wow-delay="0.7s">
+				<span class="average">平均年薪</span>
+				<span class="num">500,000</span>
+				<span class="primary">项目总监</span>
+			</div>
+
+			<div class="line line4 wow bounceInUp bg-red"></div>
+		</div>
+
+		<div class="salary">
+			<div class="circle circle5  wow rollIn bg-yellow" data-wow-delay="0.8s">
+				<span class="average">平均年薪</span>
+				<span class="num">1,000,000</span>
+				<span class="primary">CEO/CTO</span>
+			</div>
+
+			<div class="line line5 wow bounceInUp bg-red"></div>
+		</div>
+	</div>
+
+	<div class="yearbox">
+		<span class="graduate">毕业生</span>
+		<span class="two">工作1-2年</span>
+		<span class="five">工作3-5年</span>
+		<span class="eight">工作5-8年</span>
+		<span class="ten">工作8-10年</span>
+		<span class="over">工作10年以上</span>
+	</div>
+</div>
+<!-- 你的薪资 -->
+</div>
+
+	<div class="msgwrap">
+		<div class="msgbox">
+			<p class="your demo2">你的薪资 可以比他们更高</p>
+			<ul class="msg-head">
+				<li>姓名</li>
+				<li>年龄</li>
+				<li>学历</li>
+				<li>入职时间</li>
+				<li>入职公司</li>
+				<li>薪资</li>
+				<li>福利</li>
+			</ul>
+
+			<div class="ms">
+				<table class="msg" borde="0" cellpadding="0" cellspacing="0" id="con">
+
+					<tr class="infro">
+						<td>于*</td>
+						<td>23</td>
+						<td>本科</td>
+						<td>2017/09/09</td>
+						<td>杭州×××</td>
+						<td>12000</td>
+						<td>五险一金</td>
+					</tr>
+
+					<tr class="infro">
+						<td>胡*</td>
+						<td>23</td>
+						<td>本科</td>
+						<td>2017/09/09</td>
+						<td>上海×××</td>
+						<td>15000</td>
+						<td>五险一金</td>
+					</tr>
+
+					<tr class="infro">
+						<td>李*</td>
+						<td>23</td>
+						<td>本科</td>
+						<td>2017/09/09</td>
+						<td>北京×××</td>
+						<td>12000</td>
+						<td>五险一金</td>
+					</tr>
+
+					<tr class="infro">
+						<td>贺*</td>
+						<td>23</td>
+						<td>本科</td>
+						<td>2017/09/09</td>
+						<td>长沙×××</td>
+						<td>17000</td>
+						<td>五险一金</td>
+					</tr>
+
+					<tr class="infro">
+						<td>季*</td>
+						<td>23</td>
+						<td>本科</td>
+						<td>2017/09/09</td>
+						<td>杭州×××</td>
+						<td>11000</td>
+						<td>五险一金</td>
+					</tr>
+
+					<tr class="infro">
+						<td>辉*</td>
+						<td>23</td>
+						<td>本科</td>
+						<td>2017/09/09</td>
+						<td>北京×××</td>
+						<td>15000</td>
+						<td>五险一金</td>
+					</tr>
+
+					<tr class="infro">
+						<td>季*</td>
+						<td>23</td>
+						<td>本科</td>
+						<td>2017/09/09</td>
+						<td>长沙×××</td>
+						<td>12000</td>
+						<td>五险一金</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+		<!-- 打造绝对行业优势-->
+	<div class="make-wrap">
+		<div class="make-new">
+			<h3>打造绝对行业优势</h3>
+			<div class="make-cir">
+				<div class="great">
+					<div class="circle">
+						<span class="cir-top"></span>
+						安
+						<span class="cir-bottom"></span>
+
+					</div>
+					<div class="circle cir1">
+						<span class="cir-top"></span>
+						简
+						<span class="cir-bottom"></span>
+
+					</div>
+					<div class="circle cir2">
+						<span class="cir-top"></span>
+						分
+						<span class="cir-bottom"></span>
+
+					</div>
+					<div class="circle cir3">
+						<span class="cir-top"></span>
+						稳
+						<span class="cir-bottom"></span>
+
+					</div>
+					<div class="circle cir4">
+						<span class="cir-top"></span>
+						动
+						<span class="cir-bottom"></span>
+
+					</div>
+					<div class="circle cir5">
+						<span class="cir-top"></span>
+						面
+						<span class="cir-bottom"></span>
+
+					</div>
+					<div class="small">
+						<h2>经典</h2>
+						<p class="smallp">世界编程语言使用率最高</p>
+					</div>
+					<div class="bgreat">
+					<p class="p1">安全性高，可以信赖的<br>字节码的检验机制</p>
+					<p class="p2">简单性，语法简洁<br>
+						   自动化内存管理<br>
+						   跨平台可移植
+					</p>
+					<p class="p3">分布式语言，跨平台高并<br>
+							发，高性能互联网架构不二之选
+					</p>
+					<p class="p4">稳定性，完美的字节码<br>安全机制，可靠的异常处理
+					</p>
+					<p class="p5">Java动态语言，动态编译动态加载，动态执行，随需而变
+					</p>
+					<p class="p6">Java动态语言，动态编译动态加载，动态执行，随需而变
+					</p>
+				</div>
+				</div>
+
+				<a href="#" class="make-btn">立即咨询</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- java教师团队 -->
+	<div class="teacher-wrap">
+		<div class="teacher-new">
+			<p class="teach wow bounceInDown">
+				<span class="cir left"></span>
+				Java精英教师团队
+				<span class="cir right"></span>
+			</p>
+
+			<div class="teach-nav left">
+				<div class="teach-img wow rollIn">
+					<img src="images/teach-1.png">
+				</div>
+				<!-- 遮罩层 -->
+				<a href="#">
+					<div class="teach-text">
+						<p>惠达项目经理-申航航</p>
+						<p class="line"></p>
+						<p>
+							工作经历：6年开发经验,华为科技-高级软件工程师,千禧科技-项目经理,优酷科技-项目经理,惠威航达科技股份有限公司-项目总监,惠达教育-学术总监。<br>
+							从事多年Java、Android软件开发及相关教育工作，精通javaSE，javaEE，Struts1、2，Spring，Hibernate，Oracle，SQLServer，MySQL，Javascript，AJAX，Android等，曾在多家公司担任项目工程师，项目经理职务。
+						</p>
+						<p><a href="#" class="btn-new">立即申请试听课</a></p>
+					</div>
+				</a>
+			</div>
+
+			<div class="teach-nav">
+				<div class="teach-img wow flipInX">
+					<img src="images/teach-2.png">
+				</div>
+				<!-- 遮罩层 -->
+				<a href="#">
+					<div class="teach-text">
+						<p>惠达项目经理-申航航</p>
+						<p class="line"></p>
+						<p>
+							工作经历：6年开发经验,华为科技-高级软件工程师,千禧科技-项目经理,优酷科技-项目经理,惠威航达科技股份有限公司-项目总监,惠达教育-学术总监。<br>
+							从事多年Java、Android软件开发及相关教育工作，精通javaSE，javaEE，Struts1、2，Spring，Hibernate，Oracle，SQLServer，MySQL，Javascript，AJAX，Android等，曾在多家公司担任项目工程师，项目经理职务。
+						</p>
+						<p><a href="#" class="btn-new">立即申请试听课</a></p>
+					</div>
+				</a>
+			</div>
+
+			<div class="teach-nav">
+				<div class="teach-img wow lightSpeedIn">
+					<img src="images/teach-3.png">
+				</div>
+				<!-- 遮罩层 -->
+				<a href="#">
+					<div class="teach-text">
+						<p>惠达项目经理-申航航</p>
+						<p class="line"></p>
+						<p>
+							工作经历：6年开发经验,华为科技-高级软件工程师,千禧科技-项目经理,优酷科技-项目经理,惠威航达科技股份有限公司-项目总监,惠达教育-学术总监。<br>
+							从事多年Java、Android软件开发及相关教育工作，精通javaSE，javaEE，Struts1、2，Spring，Hibernate，Oracle，SQLServer，MySQL，Javascript，AJAX，Android等，曾在多家公司担任项目工程师，项目经理职务。
+						</p>
+						<p><a href="#" class="btn-new">立即申请试听课</a></p>
+					</div>
+				</a>
+			</div>
+			<p class="text-center">制定授课讲师承诺，杜绝虚假宣传，确保学员利益<br>
+				10年以上开发及项目管理经验</p>
+		</div>
+	</div>
+
+	<!-- 倾力打造全能Java人才 -->
+<div class="javaper-cen">
+	<div class="javaper">
+		<div class="javaper-cen">
+			<img src="images/javaper.png" class="javaper-img wow flipInX" alt="">
+			<div class="javaper-six">
+				<div class="javaper-top">
+
+					<div class="javaper-left wow rollIn">
+						<img src="images/javaper-img1.jpg" alt="">
+
+						<div class="hui-line1">
+							<p class="line-p1">java基础入门</p>
+							<span class="line-span">11天</span>
+						</div>
+						<p class="java-left-p1">学习Java语言编程基础，能够在本机开发一些简单应用程序，为</p>
+					</div>
+
+					<div class="javaper-left wow bounceInUp">
+						<img src="images/javaper-img2.png" alt="">
+						<div class="hui-line2">
+							<p class="line-p1">java基础入门</p>
+							<span class="line-span">11天</span>
+						</div>
+						<p class="java-left-p2">学习Java语言编程基础，能够在本机开发一些简单应用程序，为</p>
+					</div>
+
+					<div class="javaper-right wow bounceInRight">
+						<img src="images/javaper-img3.png" alt="">
+						<div class="hui-line3">
+							<p class="line-p1">java基础入门</p>
+							<span class="line-span">11天</span>
+						</div>
+						<p class="java-left-p3">学习Java语言编程基础，能够在本机开发一些简单应用程序，为</p>
+					</div>
+				</div>
+				<div class="javaper-top">
+					<div class="javaper-left wow bounceInRight">
+						<img src="images/javaper-img1.jpg" alt="">
+						<div class="hui-line1">
+							<p class="line-p1">java基础入门</p>
+							<span class="line-span">11天</span>
+						</div>
+						<p class="java-left-p1">学习Java语言编程基础，能够在本机开发一些简单应用程序，为</p>
+					</div>
+
+					<div class="javaper-left wow swing">
+						<img src="images/javaper-img2.png" alt="">
+						<div class="hui-line2">
+							<p class="line-p1">java基础入门</p>
+							<span class="line-span">11天</span>
+						</div>
+						<p class="java-left-p2">学习Java语言编程基础，能够在本机开发一些简单应用程序，为</p>
+					</div>
+
+					<div class="javaper-right wow rollIn">
+						<img src="images/javaper-img3.png" alt="">
+						<div class="hui-line3">
+							<p class="line-p1">java基础入门</p>
+							<span class="line-span">11天</span>
+						</div>
+						<p class="java-left-p3">学习Java语言编程基础，能够在本机开发一些简单应用程序，为</p>
+					</div>
+				</div>
+			</div>
+			<a href="#"  class="wow bounceInDown">一对一咨询</a>
+		</div>
+
+	</div>
+</div>
+
+<!-- 填写预报名 -->
+<div class="banner">
+	<div class="tc-banner">
+		<div class="banner-cen">
+			<p class="banner-p1">填写预报名</p>
+			<p class="banner-p2">您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！</p>
+			<div class="message">
+				<form class="msgbox">
+					<div class="person">
+						<i class="iconfont icon-yonghu"></i>
+						<input type="text">
+						<label>
+							<span class="star">*</span>
+							<span class="name">真实姓名</span>
+						</label>
+					</div>
+
+					<div class="person">
+						<i class="iconfont icon-shouji"></i>
+						<input type="text" id='phone' >
+						<label>
+							<span class="star">*</span>
+							<span class="name">联系手机</span>
+						</label>
+					</div>
+
+					<div class="person">
+						<i class="iconfont icon-qq"></i>
+						<input type="text">
+						<label>
+							<span class="star">*</span>
+							<span class="name">QQ号码</span>
+						</label>
+					</div>
+
+					<div class="person">
+						<i class="iconfont icon-huodongbaomingjilu"></i>
+						<input type="text">
+						<label>
+							<span class="star">*</span>
+							<span class="name">学科报名</span>
+						</label>
+					</div>
+					<input type="submit" class="banner-btn" value="提交信息">
+			</form>
+		</div>
+	</div>
+</div>
+
+	<!-- 底部 -->
+	<iframe src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no"></iframe>
+	<scirpt src="js/index.js"></scirpt>
+	<script src="js/index.js"></script>
+	<script src="js/gd.js"></script>
+	<script src="js/animatext.min.js"></script>
+
+
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/animatext.min.js"></script>
+	<script type="text/javascript">
+		$(".demo1").animatext();
+			$(".demo2").animatext({speed: 150,
+		    effect: 'flipInX',
+		    infinite: true
+			});
+
+		$(".person input").click(function(){
+			top.location.href="../bmlc/#bm"
+		}) 
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.carousel-container {
+	position:relative;
+	width:960px;
+	margin:0 auto;
+}
+#carousel {
+	height:449px;
+	width:960px;
+	position:relative;
+}
+.carousel-image {
+	border:0;
+	display:block;
+}
+.carousel-feature {
+	position:absolute;
+	top:-1000px;
+	left:-1000px;
+	cursor:pointer;
+}
+.carousel-feature img{
+	display: block;
+	border-radius: 8px;
+/*	box-shadow:7px 7px 6px #ccc;*/
+}

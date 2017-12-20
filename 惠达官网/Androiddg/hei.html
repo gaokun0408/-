@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Android课程大纲</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+  <link rel="stylesheet" href="css/new-footer.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+</head>
+
+<body>
+  <script src="js/wow.min.js"></script>
+  <script type="text/javascript">
+  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+    new WOW().init();
+  };
+  </script>
+
+  <!-- 导航条 -->
+<!--   <div class="headerWrap">
+    <div class="header">
+      <a href="../GW/index.html" target="_blank">
+        <img src="images/hd-logo.png" alt="">
+      </a>
+      <ul class="header-nav">
+        <li><a href="../GW/index.html" target="_blank">首页</a></li>
+        <li><a href="../JavaEE课程页面/course.html" target="_blank">javaEE</a></li>
+        <li><a href="#">Android+物联网</a></li>
+        <li>
+          <a href="../H5课程页面/index.html" target="_blank">H5+全栈工程师</a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+   <div class="headerWrap">
+      <div class="header">
+        <a href="../">
+           <img src="images/hd-logo.png" alt="">
+        </a>
+        
+        <ul class="header-nav">
+          <li><a href="../">首页</a></li>
+          <li><a href="../Androidindex/">学科介绍</a></li>
+          <li class="header-active"><a href="#">课程大纲</a></li>
+          <li><a href="#">就业薪资</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    $('.header-nav li').click(function() {
+      $(this).siblings().removeClass('header-active');
+      $(this).addClass('header-active');
+    })
+  </script>
+  <!-- banner -->
+  <iframe src="html/banner.html" frameborder="0" width=100% height="878" scrolling="no"></iframe>
+  <!-- Android-物联网学科项目介绍 -->
+  <div class="Android-bg">
+    <div class="Android-cen wow bounceInLeft bg-green">
+      <img src="images/android-img.jpg" alt="">
+    </div>
+  </div>
+  <!-- 第一阶段：java语言入门 -->
+  <div class="first-bg">
+    <div class="first-cen">
+      <div class="first-left">
+        <p class="first-left-p11 wow flipInX bg-purple" data-wow-duration="4s">第一阶段：Java语言入门</p>
+        <p class="first-left-p12 wow flipInX bg-purple" data-wow-duration="0.5s">课程内容：</br>
+            1.计算机基础知识&nbsp&nbsp&nbsp&nbsp&nbsp
+            2.编程基础&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            3.面向对象&nbsp&nbsp&nbsp&nbsp
+            4.常用类&nbsp&nbsp&nbsp&nbsp
+            5.集合&nbsp&nbsp&nbsp
+            6.IO&nbsp &nbsp&nbsp
+            7.多线程&nbsp &nbsp&nbsp
+            8.GUI&nbsp &nbsp&nbsp
+            9.网络编程&nbsp&nbsp
+            10.反射&nbsp&nbsp&nbsp</br>
+            </br>培养目标：</br>
+            面向对象思想,类和对象原理和创建,封装，this关键字，构造方
+            法,引用类型传参，集合的体系,Collection的方法，适配器原理,
+            布局方式,按钮监听器,创建菜单，网络概述，网络协议，IP地址，
+            端口,UDP协议和编程实现，常量和变量，Java中的数据类型,
+            类型转换运算符、键盘录入，线程间的通信，线程池,
+            通过</br>Callable创建线程等。</p>
+      </div>
+      <div class="first-right wow bounceInRight bg-blue">
+        <img src="images/xinbaba.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 第二阶段：Android+核心基础阶段 -->
+  <div class="second-bg">
+    <div class="second-cen">
+      <div class="second-left wow flipInX bg-purple">
+        <img src="images/second-img.jpg" alt="" class="">
+      </div>
+      <div class="second-right">
+        <p class="second-left-p21">第二阶段：Android+核心基础阶段</p>
+        <p class="second-left-p22">课程内容：</br>
+            xml+json入门解析&nbsp&nbsp&nbsp&nbsp&nbsp
+            Android入门+常见布局</br>
+            文件存储+界面展现&nbsp&nbsp&nbsp&nbsp&nbsp
+            MySQL+JDBC</br>
+            数据存储+界面展现&nbsp&nbsp&nbsp&nbsp&nbsp
+            Html+Tomcat+Http协议介绍</br>
+            Servlet（Request、Response）+文件上传</br>
+            Android应用开发-网络编程</br>
+
+            </br>培养目标：</br>
+            Handler的使用和原理，cache和filedir，UriMatcher，</br>
+            内容观察者使用，POST请求，乱码问题，servletConfig，
+            servleContext，ANR异常，Handler的使用和原理等
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <!-- 第三阶段：Android项目阶段初级 -->
+  <div class="third-bg">
+    <div class="third-cen">
+      <div class="third-left">
+        <p class="third-left-p31 wow flipInX bg-purple" data-wow-duration="4s">第三阶段：Android项目阶段初级</p>
+        <p class="third-left-p32 wow flipInX bg-purple" data-wow-duration="0.5s">课程介绍：</br>
+          手机高级防护工具，高级自定义控件技术</br>
+          互联网新闻客户端项目	</br>
+
+          </br>培养目标：</br>
+          版本更新，TextView滚动及焦点处理，
+          宫格GridView控件布局文件中使用，电话监听，
+          自定义控件，自定义控件分类，ViewPager的使用 ，
+          下拉选择框，自定义开关，
+          抽取BaseFragment，拆分侧边栏和主页面，封装JavaBean，
+          自定义下拉刷新，分享内容到新浪微博等。
+        </p>
+      </div>
+      <div class="third-right wow bounceInRight bg-blue">
+        <img src="images/third-img.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+  <!-- 第四阶段：Android项目阶段中高级 -->
+  <div class="forth-bg">
+    <div class="forth-cen">
+      <div class="forth-left wow bounceInRight bg-blue">
+        <img src="images/forth-img.jpg" alt="">
+      </div>
+      <div class="forth-right">
+        <p class="forth-left-p41">第四阶段：Android项目阶段中高级</p>
+        <p class="forth-left-p42">课程介绍：</br>
+          Android5.0、6.0高级特效，百度地图项目，惠生活</br>
+
+          </br>培养目标：</br>
+          DrawerLayout的使用，动态替换ThemeView的阴影和裁剪，
+          属性动画，按钮的波纹效果，Tint染色器生成图片，
+          RecyclerView的使用，SwipeRefreshLayout的使用，
+          百度地图项目，ButterKnife的使用，retrofit的使用，
+          OrmLite的使用，dagger2的使用，json解析，
+          RecyclerView使用，tabLayout使用等。
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 第五阶段：Android项目高级进阶 -->
+  <div class="fifth-bg">
+    <div class="fifth-cen">
+      <div class="fifth-left">
+        <p class="fifth-left-p51 wow flipInX bg-purple" data-wow-duration="4s">第五阶段：Android项目高级进阶</p>
+        <p class="fifth-left-p52 wow flipInX bg-purple" data-wow-duration="0.5s">课程介绍：</br>
+          企业实战项目，多媒体项目，企业实战技巧，	NDK编程</br>
+
+          </br>培养目标：</br>
+          团队分工及岗位职责，搭建版本管理平台，svn常见操作，</br>
+          主界面的实现，视频列表的实现，Leakcanary的使用，</br>
+          MemoryAnalyzer的使用，sqlite加密，梆梆加固，渠道打包,</br>
+          增量更新,在线修复,插件开发，http框架原理，
+          volley应用</br>开发ion应用开发，retrofit应用开发,图片加载
+          库原理，glide图片库应用，picasso图片库应用等。
+        </p>
+      </div>
+      <div class="fifth-right">
+        <img src="images/fifth-img.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 报名流程 -->
+  <div class="banner">
+  	<div class="tc-banner">
+  		<div class="banner-cen">
+  			<p class="banner-p1">填写预报名</p>
+  			<p class="banner-p2">您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！</p>
+  			<div class="message">
+  				<form class="msgbox">
+  					<div class="person">
+  						<i class="iconfont icon-yonghu"></i>
+  						<input type="text">
+  						<label>
+  							<span class="star">*</span>
+  							<span class="name">真实姓名</span>
+  						</label>
+  					</div>
+
+  					<div class="person">
+  						<i class="iconfont icon-shouji"></i>
+  						<input type="text" id='phone' >
+  						<label>
+  							<span class="star">*</span>
+  							<span class="name">联系手机</span>
+  						</label>
+  					</div>
+
+  					<div class="person">
+  						<i class="iconfont icon-qq"></i>
+  						<input type="text">
+  						<label>
+  							<span class="star">*</span>
+  							<span class="name">QQ号码</span>
+  						</label>
+  					</div>
+
+  					<div class="person">
+  						<i class="iconfont icon-huodongbaomingjilu"></i>
+  						<input type="text">
+  						<label>
+  							<span class="star">*</span>
+  							<span class="name">学科报名</span>
+  						</label>
+  					</div>
+  					<input type="submit" class="banner-btn" value="立即报名">
+  			</form>
+  		</div>
+  	</div>
+  </div>
+  <!-- 底部 -->
+  <iframe class="new-footer" src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no">
+</iframe>
+</body>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+  $(".person input").click(function(){
+        top.location.href="../bmlc/#bm"
+      })
+</script>
+</html>

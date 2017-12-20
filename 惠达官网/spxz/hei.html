@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>视频下载</title>
+	<style>
+		body{
+			margin:0;padding:0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/layui.css">
+	<link rel="stylesheet" href="css/video.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	 <script type="text/javascript" src='../public/api.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.post(metapi,function(data){
+        $("head").append('<meta name="keywords" content="'+data.data.keywords+'" />');
+        $("head").append('<meta name="description" content="'+data.data.keytext+'" />');
+      })      
+    })
+  </script>
+</head>
+<body>
+	<iframe src="html/nav.html" frameborder="0" width=100% height="90" scrolling="no"></iframe>
+
+	<!-- 导航栏 -->
+	<!-- <div class="head-wrap">
+		<div class="head">
+			<a href="../GW/index.html" class="logo">
+				<img src="images/huida-ico.png" alt="">
+			</a>
+			<div class="nav">
+				<a href="#couse" class="page">课程介绍</a>
+				<a href="../spxz/video.html" class="" >视频下载</a>
+				<a href="../gkk/index.html" class="">公开课</a>
+				<a href="../szll/szll.html" class="" target="_blank">师资力量</a>
+				<a href="../jszq/technology.html" class="" target="_blank">技术专区</a>
+				<a href="../company/index.html" class="last" target="_blank">学院介绍</a>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- 轮播图 -->
+	<iframe src="html/lb.html" frameborder="0" width=100% height="600" scrolling="no"></iframe>
+	<!-- 全部分类 -->
+	<div class="classbox">
+ 
+		<!-- 课程分类 -->
+		<div class="class-con" id="couse">
+			<div class="wow swing allcl">
+				<i class="iconfont icon-caidan-copy"></i>
+				<span class="all">全部分类</span>
+			</div>
+
+			<div class="clwrap">
+				<ul class="wow bounceInDown houtai">
+					<p>后台开发</p>
+					<li>Java</li>
+					<li>C语言</li>
+					<li>C++</li>
+					<li>PHP</li>
+					<li>H5+全栈开发</li>
+				</ul>
+
+				<ul class="wow bounceInDown houtai">
+					<p>移动开发</p>
+					<li>Android</li>
+					<li>iOS</li>
+				</ul>
+
+				<ul class="wow bounceInDown houtai">
+					<p>前段开发</p>
+					<li>JavaScript</li>
+					<li>HTML/CSS</li>
+					<li>Bootstrap</li>
+					<li>jQuery</li>
+					<li>JS设计模式</li>
+					<li>MVC</li>
+					<li>HTML5+CSS3</li>
+					<li>手机网页开发</li>
+				</ul>
+
+				<ul class="wow bounceInDown houtai">
+					<p>数据库</p>
+					<li>MySQL</li>
+					<li>Oracle </li>
+					<li>Redis</li>
+					<li>MongoDB</li>
+					<li>SQL Server</li>
+				</ul>
+
+				<ul class="wow bounceInDown houtai">
+					<p>服务器</p>
+					<li>Linux/Unix</li>
+					<li>Nginx</li>
+				</ul>
+
+				<ul class="wow bounceInDown houtai">
+					<p>项目管理工具</p>
+					<li>SVN</li>
+					<li>Git</li>
+					<li>项目集成</li>
+				</ul>
+
+				<ul class="wow bounceInDown houtai">
+					<p>网页平面设计</p>
+					<li>Photoshop</li>
+					<li>Illustrator</li>
+					<li>Flash</li>
+					<li>Dreamweave</li>
+					<li>Ui设计</li>
+					<li>电商设计</li>
+					<li>网页版式</li>
+				</ul>
+
+				<ul class="wow bounceInDown houtai">
+					<p>毕业设计</p>
+					<li>Java</li>
+					<li>Android</li>
+					<li>PHP</li>
+					<li>项目集成</li>
+					<li>网页平面</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 课程图片 -->
+		<div class="class-img">
+			<!-- <ul class="wow bounceInLeft learn-img ">
+				<a href="#">
+					<img src="images/pic1.png">
+					<div class="learn-text">
+						<a href="#">
+							<p>PHP基础之web前端</p>
+						</a>
+						<span class="dlnum">下载量104</span>
+						<span>已学习78</span>
+					</div> -->
+					
+					<!-- 遮罩层 -->
+					<!-- <div class="layer">
+						<a href="../spbf/">
+							<i class="iconfont icon-1"></i>
+						</a>
+					</div>
+				</a>
+			</ul> -->
+
+		</div>
+
+	</div>
+
+
+	<!-- 页码 -->
+	<div id="page">
+		<!-- <div class="page">
+			<a href="#" class="prev">上一页</a><a href="#" class="first">首页</a><a href="#" class="num">1</a><a href="#" class="num">2</a><a href="#" class="num active">3</a><a href="#" class="num">4</a><a href="#" class="num">5</a><a href="#" class="first">末页</a><a href="#" class="prev">下一页</a>
+			<form action="" class="pform">
+				<span>到第</span>
+				<input type="number" class="pagenum">
+				<span>页</span>
+				<input type="submit" value="确定" class="inbox">
+			</form>
+		</div> -->
+	</div>
+	
+
+
+	<div class="main"></div>
+	<iframe src="../public/new-footer.html" frameborder="0" width=100% height="352" scrolling="no"></iframe>
+</body>
+<script src="js/layui.js"></script>
+<script type="text/javascript" src='../public/api.js'></script>
+<script type="text/javascript" src='js/ye.js'></script>
+<script src="http://cdn.dowebok.com/131/js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+
+</html>

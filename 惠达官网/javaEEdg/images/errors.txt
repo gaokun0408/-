@@ -1,0 +1,10 @@
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【计算机基础知识】1.计算机基础；2.DOS常用命令；3.Java概述；   4.JDK环境安装配置；5.环境变量配置；6.J": Unsupported extension: j
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【常用类】1.Object类；2.Scanner类；3.Random类；4.String；   5.StringBuilder": Unsupported extension: stringbuilder
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【常用类】1.基本包装类；2.正则表达式；3.System类；4.Date；   5.DateFormat类；6.Calend": Unsupported extension: calend
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【集合】1.Collection接口下的常用集合；2.Iterator接口；3.泛型；   4.Map接口下的常用集合": Expected end of input but "\u63A5" found.
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【网络编程】1.网络编程三要素；2.Socket原理机制；3.UDP传输；   4.TCP传输": Expected end of input but "\u4F20" found.
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【.反射】1.类加载机制原理；2.反射构造方法、字段、方法；   3.Properties配置文件": Expected end of input but "\u914D" found.
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【前端技术】1.html；2.css；3.js；4.jQuery；5.BootStrap": Unsupported extension: bootstrap
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【javaWeb核心】1.Tomcat；2.Servlet；3.Request和Response；   4.Cookie和Se": Expected end of input but "\u548C" found.
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "【ajax应用】1.ajax；2.jQuery的ajax；3.EasyUI": Unsupported extension: easyui
+[Thu Jul 20 2017 11:11:15 GMT+0800 (中国标准时间)] layer "www.hdjyjghkss.cn.biz72.com": Unsupported extension: com
